@@ -21,6 +21,7 @@ profiles:
       - d_karabiner
       - d_lazygit
       - d_neofetch
+      - d_sketchybar
       - d_skhd
       - d_spotify_tui
       - d_yabai
@@ -95,21 +96,25 @@ dotfiles:
     dst: ~/.config/neofetch
     src: .config/neofetch
 
+  d_sketchybar:
+    dst: ~/.config/sketchybar
+    src: .config/sketchybar
+
   d_skhd:
-    dst: ~/.config/skhd/skhdrc
-    src: .config/skhd/skhdrc
+    dst: ~/.config/skhd
+    src: .config/skhd
 
   d_spotify_tui:
     dst: ~/.config/spotify-tui
     src: .config/spotify-tui
 
   d_yabai:
-    dst: ~/.config/yabai/yabairc
-    src: .config/yabai/yabairc
+    dst: ~/.config/yabai
+    src: .config/yabai
 
   d_yamllint:
-    dst: ~/.config/yamllint/config
-    src: .config/yamllint/config
+    dst: ~/.config/yamllint
+    src: .config/yamllint
 
   d_yazi:
     dst: ~/.config/yazi
