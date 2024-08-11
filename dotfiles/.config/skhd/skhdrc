@@ -108,5 +108,8 @@ shift + ctrl + alt + cmd - l : yabai -m window --insert east
 # Other
 # =============================================================================================
 
+# show mission control
+cmd - m: yabai -m space --toggle mission-control && sleep 0.25 && cliclick -r m:735,60
+
 # restart Yabai
 ctrl + alt + cmd - r : yabai --restart-service

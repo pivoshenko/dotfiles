@@ -26,6 +26,9 @@ yabai -m config mouse_action1 move
 # set modifier + right-click drag to resize window
 yabai -m config mouse_action2 resize
 
+# add 20 padding to the top and bottom of all spaces regardless of the display it belongs to
+yabai -m config external_bar all:30:0
+
 # disable specific apps
 yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^Системні параметри$" manage=off
