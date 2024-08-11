@@ -38,7 +38,7 @@ What's in here?
 - Minimalism in everything
 - Consistency
 - Simplicity
-- One style - [JetBrainsMono](https://www.jetbrains.com/lp/mono) font and [Catppuccin](https://github.com/catppuccin/catppuccin) color palette
+- One style - [JetBrainsMono](https://www.jetbrains.com/lp/mono) font and [Catppuccin Macchiato](https://github.com/catppuccin/catppuccin) color palette
 - Reduced visual noise, only important things should be shown
 - "Please, do not touch my code" - minimal auto-formatting or code flow interruptions
 - Security - do not share anything with anyone
@@ -70,6 +70,11 @@ dotdrop -c "dotdrop.yaml" -p base install -f
 # macOS only!
 dotdrop -c "dotdrop.yaml" -p macos install -f
 ```
+
+> [!NOTE]
+> To change the theme in apps such as Chrome, Spotify, etc please follow the instructions in the official [Catppuccin repository](https://github.com/catppuccin/catppuccin) as those themes can't be exported/imported easily as config.
+>
+> My personal go choice is *Macchiato* with *Mauve* flavor
 
 ## Apps
 
