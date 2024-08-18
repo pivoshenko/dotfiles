@@ -17,41 +17,48 @@ matches:
     replace: "🤔"
 
 # =============================================================================================
-# git
+# git commit
 # =============================================================================================
 
-  - trigger: ":gbuildu"
+  - trigger: ":gcbuildu"
     form: "build([[tool]]): update dependencies"
     form_fields:
       tool:
         default: poetry
 
-  - trigger: ":gbuilda"
+  - trigger: ":gcbuilda"
     form: "build([[tool]]): add `[[dependency]]`"
     form_fields:
       tool:
         default: poetry
 
-  - trigger: ":gbuildr"
+  - trigger: ":gcbuildr"
     form: "build([[tool]]): remove `[[dependency]]`"
     form_fields:
       tool:
         default: poetry
 
-  - trigger: ":gsf"
+  - trigger: ":gcsf"
     form: "style([[component]]): run formatters"
 
-  - trigger: ":ggsf"
+  - trigger: ":gcgsf"
     form: "style: run formatters"
 
-  - trigger: ":ghooksu"
+  - trigger: ":gchooksu"
     replace: "ci(pre-commit): update hooks"
 
-  - trigger: ":ghooksa"
+  - trigger: ":gchooksa"
     form: "ci(pre-commit): add `[[hook]]`"
 
-  - trigger: ":ghooksr"
+  - trigger: ":gchooksr"
     form: "ci(pre-commit): remove `[[hook]]`"
+
+# =============================================================================================
+# git commands
+# =============================================================================================
+
+  - trigger: ":gr"
+    replace: git rebase -i HEAD~10
 
 # =============================================================================================
 # Misc
