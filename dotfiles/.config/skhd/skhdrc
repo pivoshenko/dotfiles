@@ -36,6 +36,12 @@ cmd + ctrl - 9 : yabai -m space --focus 9
 cmd + ctrl - 0 : yabai -m space --focus 10
 
 # =============================================================================================
+# Spaces
+# =============================================================================================
+
+cmd + alt - w : yabai -m space --focus prev && yabai -m space recent --destroy
+
+# =============================================================================================
 # Layout (windows)
 # =============================================================================================
 
@@ -61,12 +67,15 @@ shift + alt - e : yabai -m space --balance
 shift + alt - s : yabai -m window --toggle sticky
 
 # toggle sticky, float and resize to picture-in-picture size
-shift + alt - p : yabai -m window --toggle sticky;\
-          yabai -m window --grid 5:5:4:0:1:1
+shift + alt - p : yabai -m window --toggle sticky; yabai -m window --grid 5:5:4:0:1:1
 
-# change layout of space.
-shift + alt - a : yabai -m space --layout bsp
-shift + alt - d : yabai -m space --layout float
+# change layout of space
+shift + alt - b : yabai -m space --layout bsp
+shift + alt - f : yabai -m space --layout float
+
+# =============================================================================================
+# Windows
+# =============================================================================================
 
 # swap windows
 shift + alt - j : yabai -m window --swap south
@@ -111,5 +120,7 @@ shift + ctrl + alt + cmd - l : yabai -m window --insert east
 # show mission control
 cmd - m: yabai -m space --toggle mission-control && sleep 0.25 && cliclick -r m:735,60
 
-# restart Yabai
-ctrl + alt + cmd - r : yabai --restart-service
+# restart yabai
+ctrl + alt + cmd - y : yabai --restart-service
+# restart skhd
+ctrl + alt + cmd - s : skhd --restart-service

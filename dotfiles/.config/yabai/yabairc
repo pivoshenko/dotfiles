@@ -40,7 +40,7 @@ yabai -m rule --add app="^DBeaver$" space=code
 # new window spawns to the right if vertical split, or bottom if horizontal split
 yabai -m config window_placement second_child
 
-yabai -m config insert_feedback_color 0xff8087a2
+yabai -m config insert_feedback_color 0xffc6a0f6
 
 # =============================================================================================
 # Padding
