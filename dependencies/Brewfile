@@ -17,20 +17,24 @@ cask "font-symbols-only-nerd-font"
 # Apps
 # =============================================================================================
 
+# AI-powered productivity tool for the command-line
+cask "amazon-q"
 # installer for betterdiscord
 cask "betterdiscord-installer"
 # universal database tool and SQL client
 cask "dbeaver-community"
 # voice and text chat software
 cask "discord"
+# cross-platform text expander written in Rust
+cask "espanso"
 # screen colour temperature controller
 cask "flux"
 # web browser
 cask "google-chrome"
-# terminal emulator as alternative to Apple's Terminal app
-cask "iterm2"
 # HTTP and GraphQL Client
 cask "insomnia"
+# terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
 # jetbrains tools manager
 cask "jetbrains-toolbox"
 # keyboard customiser
@@ -41,6 +45,10 @@ cask "nordpass"
 cask "nordvpn"
 # knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# control your tools with a few keystrokes
+cask "raycast"
+# app that enables mouse-free UI interaction
+cask "shortcat"
 # music streaming service
 cask "spotify"
 # messaging app with a focus on speed and security
@@ -143,16 +151,16 @@ brew "pinentry-mac"
 brew "pyenv"
 # search tool like grep and the silver searcher
 brew "ripgrep"
-# install various Ruby versions and implementations
-brew "ruby-build"
 # ruby version manager
 brew "rbenv"
+# install various Ruby versions and implementations
+brew "ruby-build"
 # rust toolchain installer
 brew "rustup-init"
-# Spotify for the terminal written in Rust
-brew "spotify-tui"
 # Spotify customization
 brew "spicetify-cli"
+# Spotify for the terminal written in Rust
+brew "spotify-tui"
 # cross-shell prompt for astronauts
 brew "starship"
 # pluggable terminal workspace with terminal multiplexer as the base feature
@@ -165,14 +173,15 @@ brew "unar"
 brew "vhs"
 # internet file retriever
 brew "wget"
-# shell extension to navigate your filesystem faster
-brew "zoxide"
-# next-generation plugin manager for zsh
-brew "zplug"
-# pluggable terminal workspace with terminal multiplexer as the base feature
-brew "zellij"
 # blazing fast terminal file manager written in Rust, based on async I/O
 brew "yazi"
+# pluggable terminal workspace with terminal multiplexer as the base feature
+brew "zellij"
+# next-generation plugin manager for zsh
+brew "zplug"
+# shell extension to navigate your filesystem faster
+brew "zoxide"
+
 
 # =============================================================================================
 # Linters, formatters and LSPs
@@ -181,8 +190,8 @@ brew "yazi"
 # static checker for GitHub Actions workflow files
 brew "actionlint"
 # language server for Ansible files
-brew "ansible-lint"
 brew "ansible-language-server"
+brew "ansible-lint"
 # bash language server that brings an IDE-like experience for bash scripts to most editors
 brew "bash-language-server"
 # linter for .env files
@@ -219,6 +228,7 @@ brew "yaml-language-server"
 # =============================================================================================
 
 vscode "alefragnani.project-manager"
+vscode "amazonwebservices.codewhisperer-for-command-line-companion"
 vscode "catppuccin.catppuccin-vsc"
 vscode "charliermarsh.ruff"
 vscode "dorzey.vscode-sqlfluff"
@@ -256,7 +266,6 @@ vscode "ms-vscode.live-server"
 vscode "ms-vscode.remote-explorer"
 vscode "ms-vscode.remote-server"
 vscode "ms-vscode.test-adapter-converter"
-vscode "ms-vscode.vscode-speech"
 vscode "naumovs.color-highlight"
 vscode "njpwerner.autodocstring"
 vscode "oderwat.indent-rainbow"
