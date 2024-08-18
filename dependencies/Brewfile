@@ -51,6 +51,8 @@ cask "raycast"
 cask "shortcat"
 # music streaming service
 cask "spotify"
+# tool that provides consistent, highly configurable symbols for apps
+cask "sf-symbols"
 # messaging app with a focus on speed and security
 cask "telegram"
 # open-source code editor

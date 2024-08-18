@@ -1,21 +1,66 @@
-yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 sudo yabai --load-sa
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+
+# =============================================================================================
+# Layout
+# =============================================================================================
 
 # default layout
 yabai -m config layout bsp
 
+yabai -m config --space social layout stack
+
+# =============================================================================================
+# Spaces
+# =============================================================================================
+
+yabai -m space 1 --label social
+yabai -m space 2 --label media
+yabai -m space 3 --label notes
+yabai -m space 4 --label web
+yabai -m space 5 --label code
+
+# =============================================================================================
+# Window rules
+# =============================================================================================
+
+yabai -m rule --add app="^Telegram$" space=social
+yabai -m rule --add app="^Discord$" space=social
+yabai -m rule --add app="^Spotify$" space=media
+yabai -m rule --add app="^Obsidian$" space=notes
+yabai -m rule --add app="^Google Chrome$" space=web
+yabai -m rule --add app="^Code$" space=code
+yabai -m rule --add app="^iTerm2$" space=code
+yabai -m rule --add app="^DBeaver$" space=code
+
+# =============================================================================================
+# Window
+# =============================================================================================
+
 # new window spawns to the right if vertical split, or bottom if horizontal split
 yabai -m config window_placement second_child
 
+# =============================================================================================
+# Padding
+# =============================================================================================
+
 # set padding
-yabai -m config top_padding 7
-yabai -m config bottom_padding 7
-yabai -m config left_padding 7
-yabai -m config right_padding 7
-yabai -m config window_gap 7
+yabai -m config top_padding 8
+yabai -m config bottom_padding 8
+yabai -m config left_padding 8
+yabai -m config right_padding 8
+yabai -m config window_gap 8
+
+# add padding to the top of all spaces regardless of the display it belongs to
+yabai -m config external_bar all:35:0
+
+# =============================================================================================
+# Mouse actions
+# =============================================================================================
 
 # center mouse on window with focus
 yabai -m config mouse_follows_focus on
+yabai -m config focus_follows_mouse autoraise
 
 # modifier for clicking and dragging with mouse
 yabai -m config mouse_modifier alt
@@ -26,10 +71,19 @@ yabai -m config mouse_action1 move
 # set modifier + right-click drag to resize window
 yabai -m config mouse_action2 resize
 
-# add 20 padding to the top and bottom of all spaces regardless of the display it belongs to
-yabai -m config external_bar all:30:0
+yabai -m config mouse_drop_action swap
 
-# disable specific apps
+# =============================================================================================
+# Signals
+# =============================================================================================
+
+yabai -m signal --add event=window_destroyed active=yes action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse &> /dev/null || yabai -m window --focus \$(yabai -m query --windows --space | jq .[0].id) &> /dev/null"
+yabai -m signal --add event=window_minimized active=yes action="if \$(yabai -m query --windows --window \$YABAI_WINDOW_ID | jq -r '.\"is-floating\"'); then yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse &> /dev/null || yabai -m window --focus \$(yabai -m query --windows --space | jq .[0].id) &> /dev/null; fi"
+
+# =============================================================================================
+# Exclusions
+# =============================================================================================
+
 yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^Системні параметри$" manage=off
 yabai -m rule --add app="^Karabiner-Elements$" manage=off
@@ -47,3 +101,6 @@ yabai -m rule --add app="^NordVPN$" manage=off
 yabai -m rule --add app="^Nord VPN$" manage=off
 yabai -m rule --add app="^Telegram$" manage=off
 yabai -m rule --add app="^GlobalProtect$" manage=off
+yabai -m rule --add app="^Raycast$" manage=off
+yabai -m rule --add app="^Shortcat$" manage=off
+yabai -m rule --add app="^Espanso$" manage=off
