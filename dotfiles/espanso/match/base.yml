@@ -1,0 +1,68 @@
+matches:
+
+# =============================================================================================
+# Emojis
+# =============================================================================================
+
+  - trigger: ":nya"
+    replace: :3
+
+  - trigger: ":ees"
+    replace: "🙂"
+
+  - trigger: ":eec"
+    replace: 🥲
+
+  - trigger: ":eet"
+    replace: "🤔"
+
+# =============================================================================================
+# git
+# =============================================================================================
+
+  - trigger: ":gbuildu"
+    form: "build([[tool]]): update dependencies"
+    form_fields:
+      tool:
+        default: poetry
+
+  - trigger: ":gbuilda"
+    form: "build([[tool]]): add `[[dependency]]`"
+    form_fields:
+      tool:
+        default: poetry
+
+  - trigger: ":gbuildr"
+    form: "build([[tool]]): remove `[[dependency]]`"
+    form_fields:
+      tool:
+        default: poetry
+
+  - trigger: ":gsf"
+    form: "style([[component]]): run formatters"
+
+  - trigger: ":ggsf"
+    form: "style: run formatters"
+
+  - trigger: ":ghooksu"
+    replace: "ci(pre-commit): update hooks"
+
+  - trigger: ":ghooksa"
+    form: "ci(pre-commit): add `[[hook]]`"
+
+  - trigger: ":ghooksr"
+    form: "ci(pre-commit): remove `[[hook]]`"
+
+# =============================================================================================
+# Misc
+# =============================================================================================
+
+  # print the current date
+  - trigger: ":date"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%m/%d/%Y"
+

@@ -12,9 +12,11 @@ profiles:
   base:
     dotfiles:
       - d_bat
+      - d_borders
       - d_bottom
       - d_delta
       - d_efm_langserver
+      - d_espanso
       - d_fsh
       - d_helix
       - d_iterm
@@ -58,6 +60,10 @@ dotfiles:
   d_bat:
     dst: ~/.config/bat
     src: .config/bat
+
+  d_borders:
+    dst: ~/.config/borders
+    src: .config/borders
 
   d_bottom:
     dst: ~/.config/bottom
@@ -190,6 +196,10 @@ dotfiles:
 # =============================================================================================
 # ~/Library
 # =============================================================================================
+
+  d_espanso:
+    dst: "~/Library/Application Support/espanso"
+    src: espanso
 
   d_pypoetry:
     dst: "~/Library/Application Support/pypoetry"
