@@ -143,10 +143,6 @@ I use [`fzf`](https://github.com/junegunn/fzf) for several tasks:
 
 ![fzf-ctrl+f](https://raw.githubusercontent.com/pivoshenko/dotfiles/master/docs/assets/fzf_ctrl_f.png)
 
-- `ctrl+g` to work `git` using [`fzf-git`](https://github.com/junegunn/fzf-git.sh)
-
-![fzf-ctrl+g](https://raw.githubusercontent.com/pivoshenko/dotfiles/master/docs/assets/fzf_ctrl_g.png)
-
 - `z <name> tab` to enable fuzzy finder for [`zoxide`](https://github.com/ajeetdsouza/zoxide)
 
 ![fzf-z+tab](https://raw.githubusercontent.com/pivoshenko/dotfiles/master/docs/assets/fzf_z_tab.png)
