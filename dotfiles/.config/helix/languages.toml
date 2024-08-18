@@ -1,3 +1,53 @@
+# =============================================================================================
+# LSPs configuration
+# =============================================================================================
+
+[language-server.efm-langserver]
+command = "efm-langserver"
+config.documentFormatting = true
+
+[language-server.pylsp.config.pylsp.plugins]
+autopep8 = { enabled = false }
+black = { enabled = true }
+flake8 = { enabled = false }
+isort = { enabled = true }
+mccabe = { enabled = false }
+memestra = { enabled = true }
+pycodestyle = { enabled = false }
+pyflakes = { enabled = false }
+pylint = { enabled = false }
+rope = { enabled = true }
+rope_autoimport = { enabled = true }
+ruff = { enabled = false }
+yapf = { enabled = false }
+
+[language-server.ruff-lsp]
+command = "ruff-lsp"
+config.documentFormatting = true
+organizeImports = false
+
+[language-server.texlab]
+config.texlab.build.auxDirectory = "build"
+config.texlab.build.args = [
+  "-X",
+  "compile",
+  "%f",
+  "--synctex",
+  "--keep-logs",
+  "--keep-intermediates",
+  "--outdir=build",
+  "-Zshell-escape"
+]
+config.texlab.build.executable = "tectonic"
+config.texlab.build.forwardSearchAfter = false
+config.texlab.build.onSave = true
+config.texlab.chktex.onEdit = true
+config.texlab.chktex.onOpenAndSave = true
+
+# =============================================================================================
+# Configuration per language
+# =============================================================================================
+
 [[language]]
 name = "bash"
 auto-format = false
@@ -44,7 +94,7 @@ file-types = [
   { glob = ".yashrc" },
   { glob = ".yash_profile" },
   { glob = ".hushlogin" },
-  { glob = ".shell/*" },
+  { glob = ".shell/*" }
 ]
 language-servers = ["bash-language-server", "efm-langserver"]
 
@@ -60,6 +110,7 @@ language-servers = ["docker-langserver", "efm-langserver"]
 
 [[language]]
 name = "env"
+auto-format = false
 file-types = [
   "env",
   ".env",
@@ -69,9 +120,8 @@ file-types = [
   ".env.dist",
   ".envrc",
   ".envrc.local",
-  ".envrc.private",
+  ".envrc.private"
 ]
-auto-format = false
 language-servers = ["efm-langserver"]
 
 [[language]]
@@ -99,8 +149,8 @@ language-servers = ["pylsp", "ruff-lsp"]
 
 [[language]]
 name = "sql"
-scope = "source.sql"
 file-types = ["sql", "dsql", "sql.j2", "ddl", "dml"]
+scope = "source.sql"
 language-servers = ["efm-langserver"]
 
 [[language]]
@@ -112,50 +162,4 @@ language-servers = ["efm-langserver", "taplo"]
 [[language]]
 name = "yaml"
 auto-format = false
-language-servers = [
-  "ansible-language-server",
-  "efm-langserver",
-  "yaml-language-server",
-]
-
-[language-server.efm-langserver]
-command = "efm-langserver"
-config.documentFormatting = true
-
-[language-server.ruff-lsp]
-command = "ruff-lsp"
-config.documentFormatting = true
-organizeImports = false
-
-[language-server.pylsp.config.pylsp.plugins]
-black = { enabled = true }
-isort = { enabled = true }
-rope = { enabled = true }
-rope_autoimport = { enabled = true }
-memestra = { enabled = true }
-autopep8 = { enabled = false }
-flake8 = { enabled = false }
-mccabe = { enabled = false }
-pycodestyle = { enabled = false }
-pyflakes = { enabled = false }
-pylint = { enabled = false }
-ruff = { enabled = false }
-yapf = { enabled = false }
-
-[language-server.texlab]
-config.texlab.build.onSave = true
-config.texlab.build.forwardSearchAfter = false
-config.texlab.build.auxDirectory = "build"
-config.texlab.build.executable = "tectonic"
-config.texlab.build.args = [
-  "-X",
-  "compile",
-  "%f",
-  "--synctex",
-  "--keep-logs",
-  "--keep-intermediates",
-  "--outdir=build",
-  "-Zshell-escape",
-]
-config.texlab.chktex.onOpenAndSave = true
-config.texlab.chktex.onEdit = true
+language-servers = ["ansible-language-server", "efm-langserver", "yaml-language-server"]

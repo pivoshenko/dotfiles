@@ -1,3 +1,5 @@
+#!/bin/bash
+
 source "$HOME/.config/sketchybar/icons.sh"
 
 VOLUME=$(osascript -e "output volume of (get volume settings)")

@@ -6,24 +6,24 @@ pager = delta
 [credential]
 helper = store
 
-[push]
-default = simple
-
-[submodule]
-recurse = true
-fetchJobs = 0
-
 [delta]
-navigate = true
-light = false
 features = catppuccin-macchiato
-line-numbers = true
-side-by-side = true
 hyperlinks = true
 hyperlinks-file-link-format = "file-line://{path}:{line}"
+light = false
+line-numbers = true
+navigate = true
+side-by-side = true
 
 [diff]
 colorMoved = default
+
+[include]
+path = ~/.config/delta/catppuccin.gitconfig
+path = ~/.gitconfig.local
+
+[init]
+defaultBranch = main
 
 [interactive]
 diffFilter = delta --color-only
@@ -31,14 +31,12 @@ diffFilter = delta --color-only
 [merge]
 conflictstyle = diff3
 
+[push]
+default = simple
+
+[submodule]
+fetchJobs = 0
+recurse = true
+
 [user]
 useConfigOnly = true
-
-[include]
-path = ~/.gitconfig.local
-
-[include]
-path = ~/.config/delta/catppuccin.gitconfig
-
-[init]
-defaultBranch = main

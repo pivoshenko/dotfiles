@@ -10,6 +10,6 @@ python = "3.11.6"
 poetry = ">=1.8.1"
 
 [tool.poetry.group.additional.dependencies]
-poethepoet = ">=0.25.0"
-poetry-plugin-dotenv = ">=0.6.10"
-poetry-plugin-up = ">=0.7.1"
+poethepoet = ">=0.27.0"
+poetry-plugin-dotenv = ">=2.1.6"
+poetry-plugin-up = ">=0.7.3"

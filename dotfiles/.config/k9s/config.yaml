@@ -1,37 +1,28 @@
 k9s:
-  liveViewAutoRefresh: false
-  refreshRate: 2
-  maxConnRetry: 5
-  readOnly: false
-  noExitOnCtrlC: false
-  ui:
-    skin: catppuccin_macchiato
-    enableMouse: false
-    headless: false
-    logoless: false
-    crumbsless: false
-    reactive: false
-    noIcons: false
-    defaultsToFullScreen: false
-  skipLatestRevCheck: false
   disablePodCounting: false
-  shellPod:
-    image: busybox:1.35.0
-    namespace: default
-    limits:
-      cpu: 100m
-      memory: 100Mi
   imageScans:
     enable: false
     exclusions:
-      namespaces: []
       labels: {}
+      namespaces: []
   logger:
-    tail: 100
     buffer: 5000
-    sinceSeconds: -1
-    textWrap: false
     showTime: false
+    sinceSeconds: -1
+    tail: 100
+    textWrap: false
+  liveViewAutoRefresh: false
+  maxConnRetry: 5
+  noExitOnCtrlC: false
+  readOnly: false
+  refreshRate: 2
+  shellPod:
+    image: busybox:1.35.0
+    limits:
+      cpu: 100m
+      memory: 100Mi
+    namespace: default
+  skipLatestRevCheck: false
   thresholds:
     cpu:
       critical: 90
@@ -39,3 +30,12 @@ k9s:
     memory:
       critical: 90
       warn: 70
+  ui:
+    crumbsless: false
+    defaultsToFullScreen: false
+    enableMouse: false
+    headless: false
+    logoless: false
+    noIcons: false
+    reactive: false
+    skin: catppuccin_macchiato

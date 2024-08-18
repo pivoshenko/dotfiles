@@ -47,17 +47,28 @@ DEF_PROPS=(
 sketchybar --bar "${BAR_PROPS[@]}"
 sketchybar --default "${DEF_PROPS[@]}"
 
-# -- LEFT Side Items --
+# =============================================================================================
+# Left side
+# =============================================================================================
+
 source "$ITEM_DIR/apple.sh"
 source "$ITEM_DIR/spaces.sh"
 source "$ITEM_DIR/front_app.sh"
 
-# -- RIGHT Side Items --
+# =============================================================================================
+# Right side
+# =============================================================================================
+
 source "$ITEM_DIR/time.sh"
 source "$ITEM_DIR/battery.sh"
 source "$ITEM_DIR/sound.sh"
 source "$ITEM_DIR/wifi.sh"
 source "$ITEM_DIR/cpu.sh"
+
+# =============================================================================================
+# Center
+# =============================================================================================
+
 sketchybar \
   --add item cat center \
   --set cat icon="≽^•⩊•^≼" \

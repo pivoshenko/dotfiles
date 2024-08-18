@@ -1,4 +1,5 @@
 #!/bin/bash
+
   WIFI=(
   update_freq=10
   icon=$WIFI_CONN_ICON

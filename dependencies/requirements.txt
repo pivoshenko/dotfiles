@@ -2,10 +2,10 @@
 # REPLs
 # =============================================================================================
 
+catppuccin-jupyterlab
 ipython
 jupyter
 jupyterlab
-catppuccin-jupyterlab
 
 # =============================================================================================
 # LSPs
@@ -18,11 +18,11 @@ ruff-lsp
 # LSP plugins
 # =============================================================================================
 
-pyls-memestra
+pylsp-black
+pylsp-isort
 pylsp-mypy
 pylsp-rope
-python-lsp-black
-python-lsp-isort
+pyls-memestra
 
 # =============================================================================================
 # Formatters

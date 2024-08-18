@@ -1,3 +1,4 @@
+#!/bin/bash
 
 function icon_map() {
   case "$1" in

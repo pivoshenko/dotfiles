@@ -27,6 +27,12 @@ tools:
     lint-formats:
       - "%f:%l %m"
 
+  git-commit-commitizen: &git-commit-commitizen
+    prefix: commitizen
+    lint-command: "cz check --commit-msg-file"
+    lint-formats:
+      - "%m"
+
   git-commit-gitlint: &git-commit-gitlint
     prefix: gitlint
     lint-command: "gitlint --ignore B6"
@@ -34,12 +40,6 @@ tools:
     lint-formats:
       - '%l: %m: "%r"'
       - "%l: %m"
-
-  git-commit-commitizen: &git-commit-commitizen
-    prefix: commitizen
-    lint-command: "cz check --commit-msg-file"
-    lint-formats:
-      - "%m"
 
   sql-sqlfluff: &sql-sqlfluff
     prefix: sqlfluff
@@ -86,8 +86,8 @@ languages:
     - <<: *env-dotenv-linter
 
   git-commit:
-    - <<: *git-commit-gitlint
     - <<: *git-commit-commitizen
+    - <<: *git-commit-gitlint
 
   sql:
     - <<: *sql-sqlfluff

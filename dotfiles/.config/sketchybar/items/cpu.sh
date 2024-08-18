@@ -1,4 +1,5 @@
 #!/bin/bash
+
 CPU=(
   update_freq=2
   icon.font="$FONT:Regular:16.0"
