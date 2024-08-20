@@ -38,6 +38,13 @@ defaults write -globalDomain AppleAccentColor -int 4
 defaults write NSGlobalDomain AppleHighlightColor -int 4
 
 # =============================================================================================
+# Aerospace
+# =============================================================================================
+
+defaults write -g NSWindowShouldDragOnGesture -bool true
+defaults write com.apple.dock expose-group-apps -bool true && killall Dock
+
+# =============================================================================================
 # Dock
 # =============================================================================================
 
