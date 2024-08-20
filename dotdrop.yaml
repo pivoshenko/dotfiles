@@ -26,10 +26,7 @@ profiles:
       - d_local_bin
       - d_neofetch
       - d_shell
-      - d_sketchybar
-      - d_skhd
       - d_spotify_tui
-      - d_yabai
       - d_yamllint
       - d_yazi
       - d_zellij
@@ -50,6 +47,10 @@ profiles:
   macos:
     dotfiles:
       - d_pypoetry
+      - d_sketchybar
+      - d_skhd
+      - d_yabai
+      - f_aerospace
       - f_vscode
 
 dotfiles:
@@ -153,6 +154,10 @@ dotfiles:
   d_zellij_plugins:
     dst: ~/zellij-plugins
     src: zellij-plugins
+
+  f_aerospace:
+    dst: ~/.aerospace.toml
+    src: .aerospace.toml
 
   f_gitconfig:
     dst: ~/.gitconfig
