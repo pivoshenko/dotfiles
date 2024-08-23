@@ -25,12 +25,17 @@ profiles:
       - d_lazygit
       - d_local_bin
       - d_neofetch
+      - d_pypoetry
       - d_shell
+      - d_sketchybar
+      - d_skhd
       - d_spotify_tui
+      - d_yabai
       - d_yamllint
       - d_yazi
       - d_zellij
       - d_zellij_plugins
+      - f_aerospace
       - f_amazon_q
       - f_gitconfig
       - f_gnupg_agent
@@ -40,18 +45,10 @@ profiles:
       - f_jupyter_themes
       - f_starship
       - f_ssh_config
+      - f_vscode
       - f_zplugrc
       - f_zshenv
       - f_zshrc
-
-  macos:
-    dotfiles:
-      - d_pypoetry
-      - d_sketchybar
-      - d_skhd
-      - d_yabai
-      - f_aerospace
-      - f_vscode
 
 dotfiles:
 

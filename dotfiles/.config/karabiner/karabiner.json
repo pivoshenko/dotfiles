@@ -4,6 +4,22 @@
       "complex_modifications": {
         "rules": [
           {
+            "description": "Prevent command-m minimize window",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "m",
+                  "modifiers": {
+                    "mandatory": [
+                      "command"
+                    ]
+                  }
+                },
+                "type": "basic"
+              }
+            ]
+          },
+          {
             "description": "Change command + h/j/k/l to Arrows",
             "manipulators": [
               {
@@ -96,6 +112,26 @@
           "to": [
             {
               "key_code": "left_control"
+            }
+          ]
+        },
+        {
+          "from": {
+            "key_code": "right_shift"
+          },
+          "to": [
+            {
+              "key_code": "delete_or_backspace"
+            }
+          ]
+        },
+        {
+          "from": {
+            "key_code": "right_command"
+          },
+          "to": [
+            {
+              "key_code": "left_option"
             }
           ]
         }
