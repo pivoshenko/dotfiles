@@ -169,6 +169,12 @@ alt-w = "workspace W"
 # see: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 alt-tab = "workspace-back-and-forth"
 
+alt-x = "workspace next"
+alt-z = "workspace prev"
+
+alt-rightSquareBracket = "focus-monitor next"
+alt-leftSquareBracket= "focus-monitor prev"
+
 # =============================================================================================
 # Layout
 # =============================================================================================
