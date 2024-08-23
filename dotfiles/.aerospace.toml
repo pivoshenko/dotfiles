@@ -72,8 +72,21 @@ outer.right = 10
 8 = ["secondary", "dell"]
 9 = ["secondary", "dell"]
 10 = ["secondary", "dell"]
+# VSCode
 "C" = ["secondary", "dell"]
+# DBeaver
 "D" = ["secondary", "dell"]
+# Email
+"E" = "built-in"
+# Media
+"M" = "built-in"
+# Notes
+"N" = "built-in"
+# Social
+"S" = "built-in"
+# Terminal
+"T" = ["secondary", "dell"]
+# Web
 "W" = ["secondary", "dell"]
 
 # =============================================================================================

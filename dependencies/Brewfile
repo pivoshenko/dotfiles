@@ -17,8 +17,6 @@ cask "font-symbols-only-nerd-font"
 # Apps
 # =============================================================================================
 
-# AI-powered productivity tool for the command-line
-cask "amazon-q"
 # installer for betterdiscord
 cask "betterdiscord-installer"
 # universal database tool and SQL client
@@ -230,7 +228,6 @@ brew "yaml-language-server"
 # =============================================================================================
 
 vscode "alefragnani.project-manager"
-vscode "amazonwebservices.codewhisperer-for-command-line-companion"
 vscode "catppuccin.catppuccin-vsc"
 vscode "charliermarsh.ruff"
 vscode "dorzey.vscode-sqlfluff"

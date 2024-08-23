@@ -36,7 +36,6 @@ profiles:
       - d_zellij
       - d_zellij_plugins
       - f_aerospace
-      - f_amazon_q
       - f_gitconfig
       - f_gnupg_agent
       - f_ipython_config
@@ -207,10 +206,6 @@ dotfiles:
   d_pypoetry:
     dst: "~/Library/Application Support/pypoetry"
     src: pypoetry
-
-  f_amazon_q:
-    dst: "~/Library/Application Support/amazon-q/settings.json"
-    src: amazon-q/settings.json
 
   f_vscode:
     dst: "~/Library/Application Support/Code/User/settings.json"
