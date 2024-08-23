@@ -52,7 +52,7 @@ sketchybar --default "${DEF_PROPS[@]}"
 # =============================================================================================
 
 source "$ITEM_DIR/apple.sh"
-source "$ITEM_DIR/spaces.sh"
+# source "$ITEM_DIR/spaces.sh"
 source "$ITEM_DIR/front_app.sh"
 
 # =============================================================================================
@@ -71,7 +71,7 @@ source "$ITEM_DIR/cpu.sh"
 
 sketchybar \
   --add item cat center \
-  --set cat icon="≽^•⩊•^≼" \
+  --set cat icon="^•⩊•^" \
   icon.font="$ICON_FONT:Regular:18.0" \
   icon.color=$DARK_WHITE\
   label.draw=off
