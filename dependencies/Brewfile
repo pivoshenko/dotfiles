@@ -11,7 +11,9 @@ tap "homebrew/services"
 # =============================================================================================
 
 cask "font-jetbrains-mono-nerd-font"
+cask "font-space-mono-nerd-font"
 cask "font-symbols-only-nerd-font"
+cask "font-iosevka-term-nerd-font"
 
 # =============================================================================================
 # Apps
@@ -261,6 +263,7 @@ vscode "ms-vscode-remote.remote-ssh"
 vscode "ms-vscode-remote.remote-ssh-edit"
 vscode "ms-vscode-remote.remote-wsl"
 vscode "ms-vscode-remote.vscode-remote-extensionpack"
+vscode "ms-vscode.cpptools"
 vscode "ms-vscode.live-server"
 vscode "ms-vscode.remote-explorer"
 vscode "ms-vscode.remote-server"
@@ -275,6 +278,7 @@ vscode "rodolphebarbanneau.python-docstring-highlighter"
 vscode "rust-lang.rust-analyzer"
 vscode "samuelcolvin.jinjahtml"
 vscode "silverquark.dancehelix"
+vscode "sumneko.lua"
 vscode "tamasfe.even-better-toml"
 vscode "tgriesser.avro-schemas"
 vscode "trond-snekvik.simple-rst"
