@@ -23,6 +23,9 @@
     - [fzf](#fzf)
   - [Local configuration](#local-configuration)
 
+> [!CAUTION]
+> Currently, my dotfiles are under heavy redesign so this README is a bit outdated
+
 ## Contents
 
 What's in here?
@@ -44,9 +47,6 @@ What's in here?
 - Security - do not share anything with anyone
 
 ## Installation
-
-> [!IMPORTANT]
-> I am planning to use [`dotbot`](https://github.com/anishathalye/dotbot) to set everything instead of `ansible` and `dotdrop` as it doesn't require any external dependencies and can be used as a submodule
 
 I am using [`dotdrop`](https://github.com/deadc0de6/dotdrop) to manage dotfiles and [`ansible`](https://github.com/ansible/ansible) to set things up. Steps:
 
