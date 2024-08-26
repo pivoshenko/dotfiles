@@ -12,11 +12,10 @@ key-mapping.preset = "qwerty"
 # available commands: https://nikitabobko.github.io/AeroSpace/commands
 after-login-command = []
 after-startup-command = []
-
 exec-on-workspace-change = [
   "/bin/bash",
   "-c",
-  "sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE",
+  "sketchybar --trigger aerospace_workspace_changed FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE",
 ]
 
 # =============================================================================================
@@ -54,7 +53,7 @@ inner.horizontal = 10
 inner.vertical = 10
 outer.left = 10
 outer.bottom = 10
-outer.top = 50
+outer.top = 55
 outer.right = 10
 
 # =============================================================================================
@@ -71,23 +70,24 @@ outer.right = 10
 7 = ["secondary", "dell"]
 8 = ["secondary", "dell"]
 9 = ["secondary", "dell"]
-10 = ["secondary", "dell"]
-# VSCode
-"C" = ["secondary", "dell"]
-# DBeaver
-"D" = ["secondary", "dell"]
-# Email
-"E" = "built-in"
-# Media
-"M" = "built-in"
-# Notes
-"N" = "built-in"
-# Social
-"S" = "built-in"
-# Terminal
-"T" = ["secondary", "dell"]
-# Web
-"W" = ["secondary", "dell"]
+# TODO temporary disabled
+# 10 = ["secondary", "dell"]
+# # Code
+# "C" = ["secondary", "dell"]
+# # Database
+# "D" = ["secondary", "dell"]
+# # Email
+# "E" = "built-in"
+# # Media
+# "M" = "built-in"
+# # Notes
+# "N" = "built-in"
+# # Social
+# "S" = "built-in"
+# # Terminal
+# "T" = ["secondary", "dell"]
+# # Web
+# "W" = ["secondary", "dell"]
 
 # =============================================================================================
 # Main keybindings
@@ -148,23 +148,24 @@ alt-6 = "workspace 6"
 alt-7 = "workspace 7"
 alt-8 = "workspace 8"
 alt-9 = "workspace 9"
-alt-0 = "workspace 10"
-# VSCode
-alt-c = "workspace C"
-# DBeaver
-alt-d = "workspace D"
-# Email
-alt-e = "workspace E"
-# Media
-alt-m = "workspace M"
-# Notes
-alt-n = "workspace N"
-# Social
-alt-s = "workspace S"
-# Terminal
-alt-t = "workspace T"
-# Web
-alt-w = "workspace W"
+# TODO temporary disabled
+# alt-0 = "workspace 10"
+# # VSCode
+# alt-c = "workspace C"
+# # DBeaver
+# alt-d = "workspace D"
+# # Email
+# alt-e = "workspace E"
+# # Media
+# alt-m = "workspace M"
+# # Notes
+# alt-n = "workspace N"
+# # Social
+# alt-s = "workspace S"
+# # Terminal
+# alt-t = "workspace T"
+# # Web
+# alt-w = "workspace W"
 
 # see: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 alt-tab = "workspace-back-and-forth"
@@ -205,23 +206,24 @@ alt-shift-6 = "move-node-to-workspace 6"
 alt-shift-7 = "move-node-to-workspace 7"
 alt-shift-8 = "move-node-to-workspace 8"
 alt-shift-9 = "move-node-to-workspace 9"
-alt-shift-0 = "move-node-to-workspace 10"
-# VSCode
-alt-shift-c = "move-node-to-workspace C"
-# DBever
-alt-shift-d = "move-node-to-workspace D"
-# Email
-alt-shift-e = "move-node-to-workspace E"
-# Media
-alt-shift-m = "move-node-to-workspace M"
-# Notes
-alt-shift-n = "move-node-to-workspace N"
-# Social
-alt-shift-s = "move-node-to-workspace S"
-# Terminal
-alt-shift-t = "move-node-to-workspace T"
-# Web
-alt-shift-w = "move-node-to-workspace W"
+# TODO temporary disabled
+# alt-shift-0 = "move-node-to-workspace 10"
+# # Code
+# alt-shift-c = "move-node-to-workspace C"
+# # Database
+# alt-shift-d = "move-node-to-workspace D"
+# # Email
+# alt-shift-e = "move-node-to-workspace E"
+# # Media
+# alt-shift-m = "move-node-to-workspace M"
+# # Notes
+# alt-shift-n = "move-node-to-workspace N"
+# # Social
+# alt-shift-s = "move-node-to-workspace S"
+# # Terminal
+# alt-shift-t = "move-node-to-workspace T"
+# # Web
+# alt-shift-w = "move-node-to-workspace W"
 
 # see: https://nikitabobko.github.io/AeroSpace/commands#move-workspace-to-monitor
 alt-shift-tab = "move-workspace-to-monitor --wrap-around next"
