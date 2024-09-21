@@ -4,7 +4,6 @@
 # Themes
 # =============================================================================================
 
-
 export FZF_CATPPUCCIN_LATTE=" \
   --color=bg+:#ccd0da,bg:#eff1f5,spinner:#dc8a78,hl:#d20f39 \
   --color=fg:#4c4f69,header:#d20f39,info:#8839ef,pointer:#dc8a78 \
@@ -31,17 +30,14 @@ export FZF_CATPPUCCIN_MOCHA=" \
 
 export FZF_THEME=$FZF_CATPPUCCIN_MACCHIATO
 
-
 # =============================================================================================
 # fzf
 # =============================================================================================
 
 if [[ ! "$PATH" == */opt/fzf/bin* ]]; then
   export PATH="$PATH:$(brew --prefix)/opt/fzf/bin"
-  source "fzf-git.sh"
   eval "$(fzf --zsh)"
 fi
-
 
 export FZF_DEFAULT_COMMAND="
   fd \

@@ -27,8 +27,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"
 export NODE_NO_WARNINGS=1
 
-. "$HOME/.cargo/env"
-
 eval "$(rbenv init -)"
 
 # =============================================================================================

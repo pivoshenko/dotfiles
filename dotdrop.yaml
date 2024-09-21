@@ -15,7 +15,6 @@ profiles:
       - d_borders
       - d_bottom
       - d_delta
-      - d_efm_langserver
       - d_espanso
       - d_fsh
       - d_helix
@@ -28,10 +27,6 @@ profiles:
       - d_pypoetry
       - d_shell
       - d_sketchybar
-      - d_skhd
-      - d_spotify_tui
-      - d_yabai
-      - d_yamllint
       - d_yazi
       - d_zellij
       - d_zellij_plugins
@@ -71,10 +66,6 @@ dotfiles:
     dst: ~/.config/delta
     src: .config/delta
 
-  d_efm_langserver:
-    dst: ~/.config/efm-langserver
-    src: .config/efm-langserver
-
   d_fsh:
     dst: ~/.config/fsh
     src: .config/fsh
@@ -102,22 +93,6 @@ dotfiles:
   d_sketchybar:
     dst: ~/.config/sketchybar
     src: .config/sketchybar
-
-  d_skhd:
-    dst: ~/.config/skhd
-    src: .config/skhd
-
-  d_spotify_tui:
-    dst: ~/.config/spotify-tui
-    src: .config/spotify-tui
-
-  d_yabai:
-    dst: ~/.config/yabai
-    src: .config/yabai
-
-  d_yamllint:
-    dst: ~/.config/yamllint
-    src: .config/yamllint
 
   d_yazi:
     dst: ~/.config/yazi

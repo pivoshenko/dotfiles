@@ -1,4 +1,4 @@
-[delta "catppuccin-latte"]
+[delta "catppuccin_latte"]
   blame-palette = "#eff1f5 #e6e9ef #dce0e8 #ccd0da #bcc0cc"
   commit-decoration-style = box ul
   light = true
@@ -25,7 +25,7 @@
     bold yellow => syntax "#ebd9bf"
   syntax-theme = catppuccin_latte
 
-[delta "catppuccin-frappe"]
+[delta "catppuccin_frappe"]
   blame-palette = "#303446 #292c3c #232634 #414559 #51576d"
   commit-decoration-style = box ul
   dark = true
@@ -52,7 +52,7 @@
     bold yellow => syntax "#5d5958"
   syntax-theme = catppuccin_frappe
 
-[delta "catppuccin-macchiato"]
+[delta "catppuccin_macchiato"]
   blame-palette = "#24273a #1e2030 #181926 #363a4f #494d64"
   commit-decoration-style = box ul
   dark = true
@@ -79,7 +79,7 @@
     bold yellow => syntax "#575253"
   syntax-theme = catppuccin_macchiato
 
-[delta "catppuccin-mocha"]
+[delta "catppuccin_mocha"]
   blame-palette = "#1e1e2e #181825 #11111b #313244 #45475a"
   commit-decoration-style = box ul
   dark = true

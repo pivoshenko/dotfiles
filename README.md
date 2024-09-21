@@ -48,27 +48,19 @@ What's in here?
 
 ## Installation
 
-I am using [`dotdrop`](https://github.com/deadc0de6/dotdrop) to manage dotfiles and [`ansible`](https://github.com/ansible/ansible) to set things up. Steps:
+I am using [`dotdrop`](https://github.com/deadc0de6/dotdrop) to manage dotfiles. Steps:
 
 1. Clone this repo with: `git clone https://github.com/pivoshenko/dotfiles dotfiles`
 2. `cd dotfiles/`
 3. Run the following commands to install the necessary tooling:
 
 ```shell
-# install core: homebrew, zsh, oh-my-zsh and configs (optional)
-ansible-playbook playbooks/shell.yaml
-
-# install dependencies
-ansible-playbook playbooks/dependencies.yaml
 ```
 
 4. Run the following commands to install configs:
 
 ```shell
 dotdrop -c "dotdrop.yaml" -p base install -f
-
-# macOS only!
-dotdrop -c "dotdrop.yaml" -p macos install -f
 ```
 
 > [!NOTE]
@@ -95,12 +87,8 @@ Because I am using a primarily external keyboard and in most of my apps I rely o
 To resolve this issue I am using two daemons:
 
 - [Karabiner](https://karabiner-elements.pqrs.org) - to enable the Vi motions system-wise and rebind some of the keys for example `caps lock -> lctrl`
-- [`skhd`](https://github.com/koekeishiya/skhd) - to manage keybinding for tilling window manager
 
 ## Tiling Windows Manager
-
-As my main tiling windows manager I am using [`yabai`](https://github.com/koekeishiya/yabai) which is light and very configurable.
-It works perfectly with `skhd` which allows me to focus and modify the layout without distractions.
 
 ## CLI
 

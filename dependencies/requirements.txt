@@ -3,6 +3,7 @@
 # =============================================================================================
 
 catppuccin-jupyterlab
+catppuccin[pygments]
 ipython
 jupyter
 jupyterlab

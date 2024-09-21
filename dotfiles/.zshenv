@@ -16,7 +16,7 @@ _fzf_complete_realpath() {
       bat -n \
         --color=always \
         --line-range :100 \
-        --theme=catppuccin_mocha \
+        --theme=catppuccin_macchiato \
         "$realpath"
     fi
   fi

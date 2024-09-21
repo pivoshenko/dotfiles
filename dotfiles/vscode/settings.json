@@ -120,8 +120,6 @@
   // Core
   // =============================================================================================
 
-  "update.mode": "none",
-
   "files.autoSave": "afterDelay",
 
   "explorer.confirmDelete": false,
