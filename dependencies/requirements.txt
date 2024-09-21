@@ -18,11 +18,10 @@ ruff-lsp
 # LSP plugins
 # =============================================================================================
 
-pylsp-black
-pylsp-isort
+python-lsp-black
+python-lsp-isort
 pylsp-mypy
 pylsp-rope
-pyls-memestra
 
 # =============================================================================================
 # Formatters
@@ -39,8 +38,6 @@ pyupgrade
 
 codespell
 deptry
-gitlint
-memestra
 mypy
 ruff
 sqlfluff
