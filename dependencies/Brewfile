@@ -4,6 +4,7 @@
 
 tap "homebrew/bundle"
 tap "homebrew/services"
+tap "FelixKratz/formulae"
 
 # =============================================================================================
 # Fonts
@@ -40,6 +41,8 @@ cask "iterm2"
 cask "jetbrains-toolbox"
 # keyboard customiser
 cask "karabiner-elements"
+# i3-like tiling window manager for macOS
+cask "nikitabobko/tap/aerospace"
 # password manager
 cask "nordpass"
 # VPN client for secure internet access and private browsing
@@ -97,6 +100,8 @@ brew "rustup-init"
 brew "act"
 # cat with syntax highlighting and Git integration
 brew "bat"
+# a lightweight window border system for macOS
+bat "borders"
 # yet another cross-platform graphical process/system monitor
 brew "bottom"
 # defines a standard way of committing rules
@@ -141,6 +146,8 @@ brew "neofetch"
 brew "pinentry-mac"
 # search tool like grep and the silver searcher
 brew "ripgrep"
+# a highly customizable macOS status bar replacement
+brew "sketchybar"
 # Spotify customization
 brew "spicetify-cli"
 # cross-shell prompt for astronauts
