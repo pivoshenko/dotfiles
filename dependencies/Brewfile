@@ -3,7 +3,6 @@
 # =============================================================================================
 
 tap "homebrew/bundle"
-tap "homebrew/cask-versions"
 tap "homebrew/services"
 
 # =============================================================================================
@@ -25,6 +24,8 @@ cask "betterdiscord-installer"
 cask "dbeaver-community"
 # voice and text chat software
 cask "discord"
+# pack, ship and run any application as a lightweight container
+cask "docker"
 # cross-platform text expander written in Rust
 cask "espanso"
 # screen colour temperature controller
@@ -58,18 +59,6 @@ cask "telegram"
 # open-source code editor
 cask "visual-studio-code"
 
-# the cat tells you the CPU usage of Mac by running speed
-# mas "RunCat", id: 1429033973
-# pomodoro timer
-# mas "Flow", id: 1423210932
-
-# =============================================================================================
-# QuickLook plugins
-# =============================================================================================
-
-cask "qlmarkdown"
-cask "syntax-highlight"
-
 # =============================================================================================
 # Programming languages, REPLs
 # =============================================================================================
@@ -86,6 +75,19 @@ brew "lua"
 brew "node"
 # powerful, clean, object-oriented scripting language
 brew "ruby"
+# safe, concurrent, practical language
+brew "rust"
+
+# manage multiple Node.js versions
+brew "nvm"
+# python version management
+brew "pyenv"
+# ruby version manager
+brew "rbenv"
+# install various Ruby versions and implementations
+brew "ruby-build"
+# rust toolchain installer
+brew "rustup-init"
 
 # =============================================================================================
 # CLI tools
@@ -101,12 +103,8 @@ brew "bottom"
 brew "commitizen"
 # query HTTP, HTTPS or FTP server
 brew "curl"
-# dotfiles manager
-brew "dotdrop"
 # pack, ship and run any application as a lightweight container
 brew "docker"
-# clean Docker containers, images, networks, and volumes
-brew "docker-clean"
 # CLI tool for running SQL queries against JSON, CSV, Excel, Parquet
 brew "dsq"
 # embeddable SQL OLAP Database Management System
@@ -131,42 +129,22 @@ brew "helix"
 brew "jq"
 # kubernetes cli to manage your clusters in style!
 brew "k9s"
-# hotkey daemon for macOS
-brew "koekeishiya/formulae/skhd"
-# tiling window manager for macOS
-brew "koekeishiya/formulae/yabai"
 # kubernetes command-line interface
 brew "kubernetes-cli"
 # lazier way to manage everything docker
 brew "lazydocker"
 # simple terminal ui for git commands
 brew "lazygit"
-# interactive cheatsheet tool for the command-line
-brew "navi"
 # fast, highly customisable system info script
 brew "neofetch"
-# manage multiple Node.js versions
-brew "nvm"
 # pinentry for GPG on Mac
 brew "pinentry-mac"
-# python version management
-brew "pyenv"
 # search tool like grep and the silver searcher
 brew "ripgrep"
-# ruby version manager
-brew "rbenv"
-# install various Ruby versions and implementations
-brew "ruby-build"
-# rust toolchain installer
-brew "rustup-init"
 # Spotify customization
 brew "spicetify-cli"
-# Spotify for the terminal written in Rust
-brew "spotify-tui"
 # cross-shell prompt for astronauts
 brew "starship"
-# pluggable terminal workspace with terminal multiplexer as the base feature
-brew "taplo"
 # display directories as trees (with optional color/html output)
 brew "tree"
 # command-line unarchiving tools supporting multiple formats
@@ -184,46 +162,22 @@ brew "zplug"
 # shell extension to navigate your filesystem faster
 brew "zoxide"
 
-
 # =============================================================================================
 # Linters, formatters and LSPs
 # =============================================================================================
 
 # static checker for GitHub Actions workflow files
 brew "actionlint"
-# language server for Ansible files
-brew "ansible-language-server"
-brew "ansible-lint"
-# bash language server that brings an IDE-like experience for bash scripts to most editors
-brew "bash-language-server"
-# linter for .env files
-brew "dotenv-linter"
 # a language server for Dockerfiles powered by Node.js
 brew "dockerfile-language-server"
-# general purpose language server
-brew "efm-langserver"
 # Language Server and Debugger for Elixir
 brew "elixir-ls"
 # smarter Dockerfile linter to validate best practices
 brew "hadolint"
-# LSP for LanguageTool with support for Latex
-brew "ltex-ls"
-# Language Server Protocol for Markdown
+# language server protocol for Markdown
 brew "marksman"
-# autoformat shell script source code
-brew "shfmt"
-# modernized, complete, self-contained TeX/LaTeX engine
-brew "tectonic"
-# implementation of the Language Server Protocol for LaTeX
-brew "texlab"
-# LSP implementation for TypeScript wrapping
-brew "typescript-language-server"
-# HTML/CSS/JSON/ESLint language servers
-brew "vscode-langservers-extracted"
-# extensible command-line tool to format YAML files
-brew "yamlfmt"
-# language server for YAML Files
-brew "yaml-language-server"
+# TOML toolkit written in Rust
+brew "taplo"
 
 # =============================================================================================
 # VSCode extensions
