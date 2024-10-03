@@ -24,7 +24,7 @@
   - [Local configuration](#local-configuration)
 
 > [!CAUTION]
-> Currently, my dotfiles are under heavy redesign so this README is a bit outdated
+> Currently, my dotfiles are under heavy redesign so this README and partially some configs are a bit outdated
 
 ## Contents
 
