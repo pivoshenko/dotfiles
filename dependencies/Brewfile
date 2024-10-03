@@ -101,7 +101,7 @@ brew "act"
 # cat with syntax highlighting and Git integration
 brew "bat"
 # a lightweight window border system for macOS
-bat "borders"
+brew "borders"
 # yet another cross-platform graphical process/system monitor
 brew "bottom"
 # defines a standard way of committing rules
