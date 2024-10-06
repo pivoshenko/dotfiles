@@ -61,6 +61,8 @@ cask "sf-symbols"
 cask "telegram"
 # open-source code editor
 cask "visual-studio-code"
+# AI code editor
+cask "zed"
 
 # =============================================================================================
 # Programming languages, REPLs
@@ -90,7 +92,7 @@ brew "rbenv"
 # install various Ruby versions and implementations
 brew "ruby-build"
 # rust toolchain installer
-brew "rustup-init"
+brew "rustup"
 
 # =============================================================================================
 # CLI tools
@@ -122,8 +124,6 @@ brew "fd"
 brew "fzf"
 # gnu compiler collection
 brew "gcc"
-# github command-line tool
-brew "gh"
 # syntax-highlighting pager for git and diff output
 brew "git-delta"
 # graph visualization software from at&t and bell labs
@@ -142,6 +142,8 @@ brew "lazydocker"
 brew "lazygit"
 # fast, highly customisable system info script
 brew "neofetch"
+# ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
 # pinentry for GPG on Mac
 brew "pinentry-mac"
 # search tool like grep and the silver searcher
