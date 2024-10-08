@@ -24,7 +24,8 @@
   - [Local configuration](#local-configuration)
 
 > [!CAUTION]
-> Currently, my dotfiles are under heavy redesign so this README and partially some configs are a bit outdated
+> Currently, my dotfiles are under heavy redesign so this README and configs are a bit outdated.
+> One of the main goals is to move to Nix so stay tuned! ETA ~ a couple of weeks.
 
 ## Contents
 
