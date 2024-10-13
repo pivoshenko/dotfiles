@@ -72,16 +72,52 @@
       NSGlobalDomain.AppleTemperatureUnit = "Celsius";
 
       screencapture.disable-shadow = false;
-      screencapture.location = "~/Pictures/screenshots";
       screencapture.show-thumbnail = true;
+      screencapture.location = "~/Pictures/screenshots";
 
       SoftwareUpdate.AutomaticallyInstallMacOSUpdates = false;
 
       spaces.spans-displays = false;
+
+      WindowManager.StandardHideWidgets = true;
+      WindowManager.AutoHide = true;
+      WindowManager.EnableStandardClickToShowDesktop = false;
+      WindowManager.HideDesktop = true;
+      WindowManager.StageManagerHideWidgets = true;
+      WindowManager.StandardHideDesktopIcons = true;
+
+      CustomUserPreferences = {
+        "com.apple.menuextra.battery" = {
+            ShowPercent = true;
+            ShowTime = false;
+        };
+        "com.apple.LaunchServices" = {
+            LSQuarantine = false;
+        };
+        "com.apple.dock" = {
+            expose-group-apps = true;
+            show-process-indicators = true;
+            size-immutable = true;
+        };
+        "com.apple.ActivityMonitor" = {
+            OpenMainWindow = true;
+            IconType = 2;
+            ShowCategory = 0;
+        };
+        "com.apple.finder" = {
+            ShowExternalHardDrivesOnDesktop = false;
+            ShowRemovableMediaOnDesktop = false;
+        };
+      };
     };
 
     system.activationScripts.postActivation.text = ''
+    # disable text cursor in macOS Sonoma
+    defaults write /Library/Preferences/FeatureFlags/Domain/UIKit.plist redesigned_text_cursor -dict-add Enabled -bool NO
+
     osascript -e 'tell application "System Events" to set picture of every desktop to "~/.config/wallpapers/logo/logo_1.png"'
+
     killall Finder
+    killall Dock
     '';
 }
