@@ -1,4 +1,18 @@
-"""Reindex wallpapers."""
+"""Reindex image files in subdirectories of the 'wallpapers' directory.
+
+This script renames all .png, .jpg, and .jpeg files in each subdirectory of the
+'wallpapers' directory to a consistent format: '{subdir_name}_{index}{extension}'.
+
+Steps:
+1. Temporarily rename files to avoid conflicts
+2. Rename files to the final format
+
+Example:
+    wallpapers/
+        logo/
+            asetd.jpg -> logo_0.jpg
+            img2.png -> logo_1.png
+"""
 
 from __future__ import annotations
 

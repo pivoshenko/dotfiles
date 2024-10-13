@@ -1,3 +1,5 @@
+# Nix module is used to configure user-specific settings and the environment
+
 { config, pkgs, ... }:
 
 {

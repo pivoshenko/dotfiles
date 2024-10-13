@@ -1,3 +1,11 @@
+# Nix module for configuring essential system services and programs
+#
+# Features:
+# - Allows the use of unfree packages
+# - Enables the Nix daemon service
+# - Enables the Zsh shell
+# - Installs specified Nerd Fonts
+
 { config, pkgs, ... }:
 
 {

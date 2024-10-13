@@ -1,3 +1,10 @@
+# Nix module is used to configure Homebrew on macOS
+# Features:
+# - Enables Homebrew and configures activation settings
+# - Installs specified Homebrew formulae and casks
+# - Adds specified Homebrew taps
+# - Configures Homebrew to clean up, auto-update, and upgrade on activation
+
 { config, pkgs, ... }:
 
 {

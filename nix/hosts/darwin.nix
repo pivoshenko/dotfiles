@@ -1,3 +1,18 @@
+# Nix module for configuring macOS system settings and preferences
+# Features:
+# - Enables Touch ID authentication for sudo
+# - Customizes Dock settings (e.g., autohide, magnification, orientation, persistent apps)
+# - Configures Finder preferences (e.g., show all files, show path bar, preferred view style)
+# - Sets screensaver password delay to 0
+# - Customizes menu bar clock to show 24-hour time and date
+# - Configures keyboard, mouse, and trackpad behaviors
+# - Sets global preferences (e.g., dark mode, measurement units, scroll behavior)
+# - Configures screenshot settings (e.g., location, show thumbnail)
+# - Disables automatic macOS updates
+# - Customizes window manager settings
+# - Sets custom user preferences for various applications (e.g., menu, dock, Activity Monitor, Finder)
+# - Includes post-activation script to set desktop wallpaper and restart Finder and Dock
+
 { config, pkgs, ... }:
 
 {

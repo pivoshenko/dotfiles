@@ -1,3 +1,8 @@
+# Nix module for configuring essential system packages
+# Features:
+# - Installs a variety of programming languages and tools
+# - Includes utilities for development, system monitoring, and more
+
 { config, pkgs, ... }:
 
 {
