@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    mac-app-util.url = "github:hraban/mac-app-util";
     nix-darwin = {
       url = "github:LnL7/nix-darwin";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -19,6 +20,7 @@
       nix-darwin,
       nixpkgs,
       home-manager,
+      mac-app-util,
     }:
     let
       username = builtins.getEnv "USER";
@@ -45,12 +47,24 @@
           system = "x86_64-darwin";
           modules = [
             configuration
+            mac-app-util.darwinModules.default
             home-manager.darwinModules.home-manager
-            {
-              home-manager.useGlobalPkgs = true;
-              home-manager.useUserPackages = true;
-              home-manager.users.${username} = import ./home.nix;
-            }
+            (
+              {
+                pkgs,
+                config,
+                inputs,
+                ...
+              }:
+              {
+                home-manager.useGlobalPkgs = true;
+                home-manager.useUserPackages = true;
+                home-manager.users.${username} = import ./home.nix;
+                home-manager.sharedModules = [
+                  mac-app-util.homeManagerModules.default
+                ];
+              }
+            )
             ./hosts/common.nix
             ./hosts/darwin.nix
             ./pkgs/common.nix

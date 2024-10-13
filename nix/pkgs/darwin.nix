@@ -70,6 +70,8 @@
       "visual-studio-code"
       # AI code editor
       "zed"
+      # web browser for pure focus
+      "zen-browser"
     ];
     taps = [
       "homebrew/bundle"
