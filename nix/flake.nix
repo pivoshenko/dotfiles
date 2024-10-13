@@ -56,7 +56,9 @@
             ./pkgs/common.nix
             ./pkgs/darwin.nix
           ];
-          specialArgs = { inherit inputs; };
+          specialArgs = {
+            inherit inputs;
+          };
         };
       };
     };

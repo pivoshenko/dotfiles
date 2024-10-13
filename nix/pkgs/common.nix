@@ -86,6 +86,7 @@
     pkgs.marksman
     # language server for Nix
     pkgs.nil
+    pkgs.nixfmt-rfc-style
     # TOML toolkit written in Rust
     pkgs.taplo
   ];
