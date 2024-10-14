@@ -39,4 +39,3 @@ language-servers = ["pylsp", "ruff-lsp"]
 name = "sql"
 file-types = ["sql", "dsql", "sql.j2", "ddl", "dml"]
 scope = "source.sql"
-language-servers = []

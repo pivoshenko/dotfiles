@@ -10,7 +10,6 @@ ZSH_COLORIZE_CHROMA_FORMATTER=terminal256
 # list of plugins
 plugins=(
   gitfast
-  gh
   safe-paste
 )
 
@@ -26,21 +25,21 @@ source $ZPLUG_HOME/init.zsh
 source "$HOME/.zplugrc"
 
 # =============================================================================================
-# Shell parts
+# Shell
 # =============================================================================================
 
 source "$HOME/.shell/.aliases"
 source "$HOME/.shell/.completions"
 source "$HOME/.shell/.exports"
-source "$HOME/.shell/.fzf"
 source "$HOME/.shell/.functions"
+source "$HOME/.shell/.fzf"
 source "$HOME/.shell/.keybindings"
 if [[ -f "$HOME/.shell/.local" ]]; then
   source "$HOME/.shell/.local"
 fi
 
 # =============================================================================================
-# System information
+# Misc
 # =============================================================================================
 
 neofetch
