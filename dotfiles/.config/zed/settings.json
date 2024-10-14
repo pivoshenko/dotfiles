@@ -1,0 +1,129 @@
+{
+  // =================================================
+  // UI General
+  // =================================================
+
+  "theme": {
+    "dark": "Catppuccin Macchiato",
+    "light": "Catppuccin Latte",
+    "mode": "system"
+  },
+
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_size": 16,
+  "ui_font_family": "JetBrainsMono Nerd Font",
+  "ui_font_size": 16,
+
+  // =================================================
+  // UI Editor
+  // =================================================
+
+  "show_whitespaces": "all",
+
+  "toolbar": {
+    "breadcrumbs": false,
+    "quick_actions": false,
+    "selections_menu": false
+  },
+
+  "tabs": {
+    "activate_on_close": "history",
+    "close_position": "right",
+    "file_icons": false,
+    "git_status": true
+  },
+  "preview_tabs": {
+    "enable_preview_from_code_navigation": false,
+    "enable_preview_from_file_finder": false,
+    "enabled": true
+  },
+
+  "file_finder": {
+    "file_icons": true
+  },
+
+  // =================================================
+  // UI Dock
+  // =================================================
+
+  "chat_panel": {
+    "button": false,
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "button": false,
+    "dock": "left"
+  },
+  "notification_panel": {
+    "button": false,
+    "dock": "left"
+  },
+  "outline_panel": {
+    "dock": "right"
+  },
+  "project_panel": {
+    "dock": "right"
+  },
+  "terminal": {
+    "button": false
+  },
+
+  // =================================================
+  // Keybindings
+  // =================================================
+
+  "base_keymap": "VSCode",
+  "vim_mode": true,
+
+  // =================================================
+  // Editor
+  // =================================================
+
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 500
+    }
+  },
+
+  // =================================================
+  // Misc
+  // =================================================
+
+  "auto_update": true,
+
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+
+  // =================================================
+  // AI
+  // =================================================
+
+  "assistant": {
+    "default_model": {
+      "model": "gpt-4o",
+      "provider": "copilot_chat"
+    },
+    "dock": "left",
+    "version": "2"
+  },
+
+  // =================================================
+  // Extensions
+  // =================================================
+
+  "auto_install_extensions": {
+    "catppuccin": true,
+    "docker-compose": true,
+    "dockerfile": true,
+    "env": true,
+    "graphql": true,
+    "html": false,
+    "lua": true,
+    "nix": true,
+    "ruff": true,
+    "sql": true,
+    "toml": true
+  }
+}
