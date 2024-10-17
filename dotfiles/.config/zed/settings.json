@@ -118,6 +118,7 @@
     "docker-compose": true,
     "dockerfile": true,
     "env": true,
+    "git-firefly": true,
     "graphql": true,
     "html": false,
     "lua": true,

@@ -13,6 +13,8 @@
       "pinentry-mac"
       # a highly customizable macOS status bar replacement
       "sketchybar"
+      # next-generation plugin manager for zsh
+      "zplug"
     ];
     casks = [
       # Discord tooling

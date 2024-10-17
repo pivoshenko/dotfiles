@@ -20,8 +20,16 @@
   # =================================================
 
   home.file = {
+    ".config/iterm".source = ./../dotfiles/.config/iterm;
     ".config/wallpapers".source = ./../wallpapers;
     ".config/zed/settings.json".source = ./../dotfiles/.config/zed/settings.json;
+    ".config/starship.toml".source = ./../dotfiles/.config/starship.toml;
+    ".config/neofetch".source = ./../dotfiles/.config/neofetch;
+
+    ".shell".source = ./../dotfiles/.shell;
+    ".zplugrc".source = ./../dotfiles/.zplugrc;
+    ".zshenv".source = ./../dotfiles/.zshenv;
+    ".zshrc".source = ./../dotfiles/.zshrc;
   };
 
   # =================================================

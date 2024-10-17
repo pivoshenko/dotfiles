@@ -1,5 +1,3 @@
-# `.completions` provides custom auto-completions
-
 # enable hidden files on completion
 setopt globdots
 zstyle ":completion:*" special-dirs true
@@ -26,7 +24,6 @@ zstyle ':fzf-tab:*' fzf-flags $fzf_flags
 zstyle ':fzf-tab:complete:(\\|*/|)(ls|gls|bat|cat|cd|rm|cp|mv|ln|hx|code|open|tree|source):*' \
   fzf-preview \
   '_fzf_complete_realpath "$realpath"'
-
 
 # complete `killall`
 zstyle ':completion:*:*:killall:*:*' command 'ps -u "$USERNAME" -o comm'
