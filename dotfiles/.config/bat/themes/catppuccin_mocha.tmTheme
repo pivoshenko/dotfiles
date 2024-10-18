@@ -24,7 +24,7 @@
           <key>caret</key>
           <string>#f5e0dc</string>
           <key>lineHighlight</key>
-          <string>#cdd6f412</string>
+          <string>#313244</string>
           <key>misspelling</key>
           <string>#f38ba8</string>
           <key>accent</key>
@@ -2014,6 +2014,33 @@
         <dict>
           <key>foreground</key>
           <string>#f5c2e7</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>markup.heading.1.markdown</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#f38ba8</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>markup.heading.2.markdown</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#fab387</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>markup.heading.markdown</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#f9e2af</string>
         </dict>
       </dict>
     </array>

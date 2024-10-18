@@ -1,10 +1,16 @@
 options=(
+  # specifies the style of the border (either round or square)
   style=round
-  width=5
-  hidpi=on
-  # Catppuccin Macchiato Mauve
+
+  # determines the  width of the border
+  width=7.0
+
+  # sets the  border  color for the focused window (format: 0xAARRGGBB)
+  # catppuccin macchiato mauve
   active_color=0xffc6a0f6
-  # Catppuccin Macchiato Lavander
+
+  # sets the border color for all windows not in focus (format: 0xAARRGGBB)
+  # catppuccin macchiato lavander
   inactive_color=0xffb7bdf8
 )
 

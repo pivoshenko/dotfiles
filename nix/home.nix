@@ -20,13 +20,22 @@
   # =================================================
 
   home.file = {
-    ".config/iterm".source = ./../dotfiles/.config/iterm;
+    ".config/bat".source = ./../dotfiles/.config/bat;
+    ".config/borders".source = ./../dotfiles/.config/borders;
+    ".config/bottom".source = ./../dotfiles/.config/bottom;
+    ".config/delta".source = ./../dotfiles/.config/delta;
+    ".config/fsh".source = ./../dotfiles/.config/fsh;
+
+    ".config/iterm2/profiles".source = ./../dotfiles/.config/iterm2/profiles;
+    ".config/iterm2/themes".source = ./../dotfiles/.config/iterm2/themes;
+    ".config/neofetch".source = ./../dotfiles/.config/neofetch;
+    ".config/starship.toml".source = ./../dotfiles/.config/starship.toml;
     ".config/wallpapers".source = ./../wallpapers;
     ".config/zed/settings.json".source = ./../dotfiles/.config/zed/settings.json;
-    ".config/starship.toml".source = ./../dotfiles/.config/starship.toml;
-    ".config/neofetch".source = ./../dotfiles/.config/neofetch;
 
     ".shell".source = ./../dotfiles/.shell;
+
+    ".gitconfig".source = ./../dotfiles/.gitconfig;
     ".zplugrc".source = ./../dotfiles/.zplugrc;
     ".zshenv".source = ./../dotfiles/.zshenv;
     ".zshrc".source = ./../dotfiles/.zshrc;
@@ -42,15 +51,4 @@
     "/run/current-system/sw/bin"
     "$HOME/.nix-profile/bin"
   ];
-
-  # =================================================
-  # Declarative Configurations
-  # =================================================
-
-  programs.home-manager.enable = true;
-  programs = {
-    zsh = {
-      enable = true;
-    };
-  };
 }
