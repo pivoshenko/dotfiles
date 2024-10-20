@@ -25,6 +25,7 @@
     ".config/bottom".source = ./../dotfiles/.config/bottom;
     ".config/delta".source = ./../dotfiles/.config/delta;
     ".config/fsh".source = ./../dotfiles/.config/fsh;
+    ".config/helix".source = ./../dotfiles/.config/helix;
 
     ".config/iterm2/profiles".source = ./../dotfiles/.config/iterm2/profiles;
     ".config/iterm2/themes".source = ./../dotfiles/.config/iterm2/themes;

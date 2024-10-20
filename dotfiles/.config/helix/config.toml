@@ -1,52 +1,75 @@
+# set the theme for syntax highlighting
 theme = "catppuccin_macchiato"
 
 [editor]
+# renders a line at the top of the editor displaying open buffers
 bufferline = "always"
+# whether to color the mode indicator with different colors depending on the mode itself
 color-modes = true
+# min-length of word under cursor to trigger autocompletion
 completion-trigger-len = 1
+# highlight all lines with a cursor
 cursorline = true
+# shows the distance from the current line
 line-number = "relative"
+# enable mouse mode
 mouse = true
+# list of column positions at which to display the rulers
 rulers = [100]
+# shell to use when running external commands
 shell = ["zsh", "-c"]
+# override automatic detection of terminal truecolor support
 true-color = true
 
+# defines the shape of cursor in each mode
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
 select = "underline"
 
 [editor.file-picker]
+# show hidden files
 hidden = false
+# show ignored files
+ignore = false
+git-ignore = false
 
 [editor.indent-guides]
+# render indent guides
 render = true
 
 [editor.lsp]
+# enable inlay hints
 display-inlay-hints = true
+# show LSP progress messages below statusline
 display-messages = true
 
 [editor.statusline]
+# a list of elements aligned to the middle of the statusline
 center = []
+# a list of elements aligned to the left of the statusline
 left = [
-  "mode",
-  "separator",
-  "version-control",
-  "spinner",
-  "diagnostics",
-  "workspace-diagnostics",
+    "mode",
+    "separator",
+    "version-control",
+    "spinner",
+    "diagnostics",
+    "workspace-diagnostics",
 ]
+# a list of elements aligned to the right of the statusline
 right = [
-  "selections",
-  "primary-selection-length",
-  "position",
-  "spacer",
-  "total-line-numbers",
-  "file-name",
-  "file-type",
+    "selections",
+    "primary-selection-length",
+    "position",
+    "spacer",
+    "total-line-numbers",
+    "file-name",
+    "file-type",
 ]
+# the character used to separate elements in the statusline
 separator = "│"
 
+# render "whitespace" with visible characters
 [editor.whitespace.characters]
 nbsp = "⍽"
 space = "·"
