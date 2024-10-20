@@ -28,6 +28,7 @@
     ".config/helix".source = ./../dotfiles/.config/helix;
     ".config/iterm2/profiles".source = ./../dotfiles/.config/iterm2/profiles;
     ".config/iterm2/themes".source = ./../dotfiles/.config/iterm2/themes;
+    ".config/k9s".source = ./../dotfiles/.config/k9s;
 
     ".config/neofetch".source = ./../dotfiles/.config/neofetch;
     ".config/starship.toml".source = ./../dotfiles/.config/starship.toml;
