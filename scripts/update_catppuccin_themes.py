@@ -17,8 +17,8 @@ GITHUB_API_URL = "https://api.github.com/repos/catppuccin/{name}/contents/{direc
 TOOLS = [
     ("bat", "bat", "themes"),
     ("bottom", "bottom", "themes"),
-    # ("delta", "catppuccin.gitconfig"),
     ("zsh-fsh", "fsh", "themes"),
+    ("iterm", "iterm2", "colors"),
 ]
 
 

@@ -26,9 +26,9 @@
     ".config/delta".source = ./../dotfiles/.config/delta;
     ".config/fsh".source = ./../dotfiles/.config/fsh;
     ".config/helix".source = ./../dotfiles/.config/helix;
-
     ".config/iterm2/profiles".source = ./../dotfiles/.config/iterm2/profiles;
     ".config/iterm2/themes".source = ./../dotfiles/.config/iterm2/themes;
+
     ".config/neofetch".source = ./../dotfiles/.config/neofetch;
     ".config/starship.toml".source = ./../dotfiles/.config/starship.toml;
     ".config/wallpapers".source = ./../wallpapers;
