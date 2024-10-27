@@ -1,3 +1,7 @@
+# =================================================
+# Theme
+# =================================================
+
 [styles.tables]
 headers = { color = "#f4dbd6" }
 
@@ -5,12 +9,12 @@ headers = { color = "#f4dbd6" }
 all_entry_color = "#f4dbd6"
 avg_entry_color = "#ee99a0"
 cpu_core_colors = [
-    "#ed8796",
-    "#f5a97f",
-    "#eed49f",
-    "#a6da95",
-    "#7dc4e4",
-    "#c6a0f6",
+  "#ed8796",
+  "#f5a97f",
+  "#eed49f",
+  "#a6da95",
+  "#7dc4e4",
+  "#c6a0f6",
 ]
 
 [styles.memory]

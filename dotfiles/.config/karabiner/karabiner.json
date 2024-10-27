@@ -10,9 +10,7 @@
                 "from": {
                   "key_code": "m",
                   "modifiers": {
-                    "mandatory": [
-                      "command"
-                    ]
+                    "mandatory": ["command"]
                   }
                 },
                 "type": "basic"
@@ -26,12 +24,8 @@
                 "from": {
                   "key_code": "h",
                   "modifiers": {
-                    "mandatory": [
-                      "command"
-                    ],
-                    "optional": [
-                      "caps_lock"
-                    ]
+                    "mandatory": ["command"],
+                    "optional": ["caps_lock"]
                   }
                 },
                 "to": [
@@ -45,12 +39,8 @@
                 "from": {
                   "key_code": "j",
                   "modifiers": {
-                    "mandatory": [
-                      "command"
-                    ],
-                    "optional": [
-                      "caps_lock"
-                    ]
+                    "mandatory": ["command"],
+                    "optional": ["caps_lock"]
                   }
                 },
                 "to": [
@@ -64,12 +54,8 @@
                 "from": {
                   "key_code": "k",
                   "modifiers": {
-                    "mandatory": [
-                      "command"
-                    ],
-                    "optional": [
-                      "caps_lock"
-                    ]
+                    "mandatory": ["command"],
+                    "optional": ["caps_lock"]
                   }
                 },
                 "to": [
@@ -83,12 +69,8 @@
                 "from": {
                   "key_code": "l",
                   "modifiers": {
-                    "mandatory": [
-                      "command"
-                    ],
-                    "optional": [
-                      "caps_lock"
-                    ]
+                    "mandatory": ["command"],
+                    "optional": ["caps_lock"]
                   }
                 },
                 "to": [

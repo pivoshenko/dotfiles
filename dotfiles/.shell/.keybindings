@@ -1,4 +1,4 @@
-# remap zsh-vi-mode keybindings
+# remap `zsh-vi-mode` keybindings
 function zvm_after_init() {
     zvm_bindkey viins '^R' fzf-history-widget
     bindkey '^f' run_find_in_files

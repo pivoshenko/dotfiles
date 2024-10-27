@@ -2,8 +2,8 @@
 cwd = { fg = "#8bd5ca" }
 
 # Hovered
-hovered = { fg = "#24273a", bg = "#8aadf4" }
-preview_hovered = { underline = true }
+hovered = { fg = "#24273a", bg = "#c6a0f6" }
+preview_hovered = { fg = "#24273a", bg = "#cad3f5" }
 
 # Find
 find_keyword = { fg = "#eed49f", italic = true }
@@ -12,7 +12,7 @@ find_position = { fg = "#f5bde6", bg = "reset", italic = true }
 # Marker
 marker_copied = { fg = "#a6da95", bg = "#a6da95" }
 marker_cut = { fg = "#ed8796", bg = "#ed8796" }
-marker_selected = { fg = "#8aadf4", bg = "#8aadf4" }
+marker_selected = { fg = "#c6a0f6", bg = "#c6a0f6" }
 
 # Tab
 tab_active = { fg = "#24273a", bg = "#cad3f5" }
@@ -22,7 +22,7 @@ tab_width = 1
 # Count
 count_copied = { fg = "#24273a", bg = "#a6da95" }
 count_cut = { fg = "#24273a", bg = "#ed8796" }
-count_selected = { fg = "#24273a", bg = "#8aadf4" }
+count_selected = { fg = "#24273a", bg = "#c6a0f6" }
 
 # Border
 border_symbol = "│"
@@ -37,7 +37,7 @@ separator_close = ""
 separator_style = { fg = "#494d64", bg = "#494d64" }
 
 # Mode
-mode_normal = { fg = "#24273a", bg = "#8aadf4", bold = true }
+mode_normal = { fg = "#24273a", bg = "#c6a0f6", bold = true }
 mode_select = { fg = "#24273a", bg = "#a6da95", bold = true }
 mode_unset = { fg = "#24273a", bg = "#f0c6c6", bold = true }
 
@@ -54,18 +54,18 @@ permissions_x = { fg = "#a6da95" }
 permissions_s = { fg = "#8087a2" }
 
 [input]
-border = { fg = "#8aadf4" }
+border = { fg = "#c6a0f6" }
 title = {}
 value = {}
 selected = { reversed = true }
 
 [select]
-border = { fg = "#8aadf4" }
+border = { fg = "#c6a0f6" }
 active = { fg = "#f5bde6" }
 inactive = {}
 
 [tasks]
-border = { fg = "#8aadf4" }
+border = { fg = "#c6a0f6" }
 title = {}
 hovered = { underline = true }
 
@@ -97,7 +97,7 @@ rules = [
 
   # Fallback
   { name = "*", fg = "#cad3f5" },
-  { name = "*/", fg = "#8aadf4" }
+  { name = "*/", fg = "#c6a0f6" },
 ]
 
 [icon]
@@ -260,7 +260,7 @@ files = [
   { name = ".Xauthority", text = "", fg_dark = "#f5a97f", fg_light = "#f5a97f" },
   { name = ".prettierrc.json", text = "", fg_dark = "#8aadf4", fg_light = "#8aadf4" },
   { name = ".npmignore", text = "", fg_dark = "#ed8796", fg_light = "#ed8796" },
-  { name = ".gitmodules", text = "", fg_dark = "#f5a97f", fg_light = "#f5a97f" }
+  { name = ".gitmodules", text = "", fg_dark = "#f5a97f", fg_light = "#f5a97f" },
 ]
 exts = [
   { name = "rake", text = "", fg_dark = "#181926", fg_light = "#181926" },
@@ -694,5 +694,5 @@ exts = [
   { name = "cobol", text = "⚙", fg_dark = "#5b6078", fg_light = "#5b6078" },
   { name = "cob", text = "⚙", fg_dark = "#5b6078", fg_light = "#5b6078" },
   { name = "cmake", text = "", fg_dark = "#8087a2", fg_light = "#8087a2" },
-  { name = "webp", text = "", fg_dark = "#8087a2", fg_light = "#8087a2" }
+  { name = "webp", text = "", fg_dark = "#8087a2", fg_light = "#8087a2" },
 ]

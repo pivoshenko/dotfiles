@@ -1,0 +1,121 @@
+- defaults:
+    link:
+      relink: true
+
+- clean:
+    ~/:
+      force: true
+    ~/.config:
+      force: true
+
+- link:
+    # =================================================
+    # ~/.config
+    # =================================================
+
+    ~/.config/bat:
+      path: dotfiles/.config/bat
+      create: true
+      force: true
+    ~/.config/borders:
+      path: dotfiles/.config/borders
+      create: true
+      force: true
+    ~/.config/bottom:
+      path: dotfiles/.config/bottom
+      create: true
+      force: true
+    ~/.config/delta:
+      path: dotfiles/.config/delta
+      create: true
+      force: true
+    ~/.config/fsh:
+      path: dotfiles/.config/fsh
+      create: true
+      force: true
+    ~/.config/helix:
+      path: dotfiles/.config/helix
+      create: true
+      force: true
+    ~/.config/iterm2/profiles:
+      path: dotfiles/.config/iterm2/profiles
+      create: true
+      force: true
+    ~/.config/iterm2/themes:
+      path: dotfiles/.config/iterm2/themes
+      create: true
+      force: true
+    ~/.config/k9s:
+      path: dotfiles/.config/k9s
+      create: true
+      force: true
+    ~/.config/karabiner/karabiner.json:
+      path: dotfiles/.config/karabiner/karabiner.json
+      create: true
+      force: true
+    ~/.config/neofetch:
+      path: dotfiles/.config/neofetch
+      create: true
+      force: true
+    ~/.config/yazi:
+      path: dotfiles/.config/yazi
+      create: true
+      force: true
+    ~/.config/zed/settings.json:
+      path: dotfiles/.config/zed/settings.json
+      force: true
+    ~/.config/zellij:
+      path: dotfiles/.config/zellij
+      create: true
+      force: true
+
+    ~/.config/wallpapers:
+      path: wallpapers
+      create: true
+      force: true
+
+    # =================================================
+    # ~/
+    # =================================================
+
+    ~/.gnupg/gpg-agent.conf:
+      path: dotfiles/.gnupg/gpg-agent.conf
+      create: true
+      force: true
+    ~/.shell:
+      path: dotfiles/.shell
+      create: true
+      force: true
+    ~/.aerospace.toml:
+      path: dotfiles/.aerospace.toml
+      create: true
+      force: true
+    ~/.gitconfig:
+      path: dotfiles/.gitconfig
+      create: true
+      force: true
+    ~/.zplugrc:
+      path: dotfiles/.zplugrc
+      create: true
+      force: true
+    ~/.zshenv:
+      path: dotfiles/.zshenv
+      create: true
+      force: true
+    ~/.zshrc:
+      path: dotfiles/.zshrc
+      create: true
+      force: true
+
+- shell:
+    - command: |
+        bat cache --build
+      description: Update bat themes
+      stdout: true
+      stderr: true
+
+    - command: |
+        zsh -ic "fast-theme XDG:themes/catppuccin_macchiato"
+      description: Update fast-syntax-highlighting theme
+      stdout: true
+      stderr: true

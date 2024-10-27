@@ -8,7 +8,7 @@ zstyle ":completion:*" ignored-patterns ".|..|.DS_Store|**/.|**/..|**/.DS_Store|
 # hide `..` and `.` from the file menu
 zstyle ":completion:*" ignore-parents "parent pwd directory"
 
-# force zsh not to show the completion menu which allows fzf-tab to capture the unambiguous prefix
+# force `zsh` not to show the completion menu which allows `fzf-tab` to capture the unambiguous prefix
 zstyle ":completion:*" menu no
 
 # switch groups using `[` and `]`
@@ -21,7 +21,7 @@ fzf_flags=( "${fzf_flags[@]}" )
 zstyle ':fzf-tab:*' fzf-flags $fzf_flags
 
 # complete `ls` / `cat` / etc
-zstyle ':fzf-tab:complete:(\\|*/|)(ls|gls|bat|cat|cd|rm|cp|mv|ln|hx|code|open|tree|source):*' \
+zstyle ':fzf-tab:complete:(\\|*/|)(bat|cat|cd|code|cp|gls|hx|ln|ls|mv|open|rm|source|tree|zed):*' \
   fzf-preview \
   '_fzf_complete_realpath "$realpath"'
 

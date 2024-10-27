@@ -19,7 +19,7 @@ cask "sf-symbols"
 # Apps
 # =============================================================================================
 
-# Discord tooling
+# extend the functionality of DiscordApp by enhancing it with new features
 cask "betterdiscord-installer"
 # universal database tool and SQL client
 cask "dbeaver-community"
@@ -33,7 +33,7 @@ cask "espanso"
 cask "flux"
 # font library for icons
 cask "font-symbols-only-nerd-font"
-# web `browser
+# web browser
 cask "google-chrome"
 # terminal emulator
 cask "iterm2"
@@ -70,25 +70,15 @@ cask "zen-browser"
 # Programming Languages
 # =============================================================================================
 
-# gnu compiler collection
 brew "gcc"
-# functional metaprogramming aware language built on Erlang VM
 brew "elixir"
-# programming language for highly scalable real-time systems
 brew "erlang"
-# statically typed language for the Erlang VM
 brew "gleam"
-# powerful, lightweight programming language
 brew "lua"
-# platform built on V8 to build network applications
 brew "node"
-# python version management
 brew "pyenv"
-# powerful, clean, object-oriented scripting language
 brew "ruby"
-# safe, concurrent, practical language
 brew "rust"
-# rust toolchain installer
 brew "rustup"
 
 # =============================================================================================
@@ -97,21 +87,21 @@ brew "rustup"
 
 # cat with syntax highlighting and Git integration
 brew "bat"
-# a lightweight window border system for macOS
-brew "FelixKratz/formulae/borders"
 # yet another cross-platform graphical process/system monitor
 brew "bottom"
+# a lightweight window border system for macOS
+brew "FelixKratz/formulae/borders"
+# a highly customizable macOS status bar replacement
+brew "FelixKratz/formulae/sketchybar"
 # defines a standard way of committing rules
 brew "commitizen"
 # query HTTP, HTTPS or FTP server
 brew "curl"
-# GNU pretty good privacy (PGP) package
-brew "gnupg"
 # pack, ship and run any application as a lightweight container
 brew "docker"
 # embeddable SQL OLAP Database Management System
 brew "duckdb"
-# modern replacement for 'ls'
+# modern replacement for ls
 brew "eza"
 # simple, fast and user-friendly alternative to find
 brew "fd"
@@ -119,13 +109,15 @@ brew "fd"
 brew "fzf"
 # syntax-highlighting pager for git and diff output
 brew "git-delta"
+# GNU PGP package
+brew "gnupg"
 # graph visualization software from at&t and bell labs
 brew "graphviz"
 # post-modern modal text editor
 brew "helix"
 # lightweight and flexible command-line json processor
 brew "jq"
-# kubernetes cli to manage your clusters in style!
+# kubernetes cli to manage clusters in style
 brew "k9s"
 # lazier way to manage everything docker
 brew "lazydocker"
@@ -133,14 +125,12 @@ brew "lazydocker"
 brew "lazygit"
 # fast, highly customisable system info script
 brew "neofetch"
-# ambitious Vim-fork focused on extensibility and agility
+# ambitious vim-fork focused on extensibility and agility
 brew "neovim"
 # pinentry for GPG on Mac
 brew "pinentry-mac"
 # search tool like grep and the silver searcher
 brew "ripgrep"
-# a highly customizable macOS status bar replacement
-brew "FelixKratz/formulae/sketchybar"
 # Spotify customization
 brew "spicetify-cli"
 # cross-shell prompt for astronauts

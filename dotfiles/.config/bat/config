@@ -1,4 +1,3 @@
-# set the theme for syntax highlighting
 --theme="catppuccin_macchiato"
 
 # only show plain style, no decorations

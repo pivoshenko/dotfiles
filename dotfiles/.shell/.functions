@@ -11,13 +11,7 @@ cdf () {
   cd "$path"
 }
 
-# delete merged branches locally and remotely
-rgc () {
-  git branch -r --merged | grep -v '\*\|master\|main' | sed 's/origin\///' | xargs -n 1 git push --delete origin
-  git fetch -p
-}
-
-# iterate over directories and pull git repositories
+# iterate over sub-directories and pull Git repositories
 rgp () {
   find . -name ".git" -type d | sed 's/\/.git//' | xargs -P10 -I{} sh -c 'git -C {} fetch --all && git -C {} pull'
 }
@@ -46,7 +40,7 @@ man () {
       man "$@"
 }
 
-# activate venv via `pdm shell`
+# activate environment via `pdm shell`
 pdm () {
     local command=$1
     if [[ $command == "shell" ]]; then
