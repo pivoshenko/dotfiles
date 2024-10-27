@@ -4,7 +4,6 @@
 
 tap "homebrew/bundle"
 tap "homebrew/services"
-tap "FelixKratz/formulae"
 
 # =============================================================================================
 # Fonts
@@ -14,12 +13,13 @@ cask "font-jetbrains-mono-nerd-font"
 cask "font-space-mono-nerd-font"
 cask "font-symbols-only-nerd-font"
 cask "font-iosevka-term-nerd-font"
+cask "sf-symbols"
 
 # =============================================================================================
 # Apps
 # =============================================================================================
 
-# installer for betterdiscord
+# Discord tooling
 cask "betterdiscord-installer"
 # universal database tool and SQL client
 cask "dbeaver-community"
@@ -31,12 +31,14 @@ cask "docker"
 cask "espanso"
 # screen colour temperature controller
 cask "flux"
-# web browser
+# font library for icons
+cask "font-symbols-only-nerd-font"
+# web `browser
 cask "google-chrome"
+# terminal emulator
+cask "iterm2"
 # HTTP and GraphQL Client
 cask "insomnia"
-# terminal emulator as alternative to Apple's Terminal app
-cask "iterm2"
 # jetbrains tools manager
 cask "jetbrains-toolbox"
 # keyboard customiser
@@ -55,65 +57,58 @@ cask "raycast"
 cask "shortcat"
 # music streaming service
 cask "spotify"
-# tool that provides consistent, highly configurable symbols for apps
-cask "sf-symbols"
 # messaging app with a focus on speed and security
 cask "telegram"
 # open-source code editor
 cask "visual-studio-code"
 # AI code editor
 cask "zed"
+# web browser for pure focus
+cask "zen-browser"
 
 # =============================================================================================
-# Programming languages, REPLs
+# Programming Languages
 # =============================================================================================
 
-# programming language for highly scalable real-time systems
-brew "erlang"
+# gnu compiler collection
+brew "gcc"
 # functional metaprogramming aware language built on Erlang VM
 brew "elixir"
+# programming language for highly scalable real-time systems
+brew "erlang"
 # statically typed language for the Erlang VM
 brew "gleam"
 # powerful, lightweight programming language
 brew "lua"
 # platform built on V8 to build network applications
 brew "node"
+# python version management
+brew "pyenv"
 # powerful, clean, object-oriented scripting language
 brew "ruby"
 # safe, concurrent, practical language
 brew "rust"
-
-# manage multiple Node.js versions
-brew "nvm"
-# python version management
-brew "pyenv"
-# ruby version manager
-brew "rbenv"
-# install various Ruby versions and implementations
-brew "ruby-build"
 # rust toolchain installer
 brew "rustup"
 
 # =============================================================================================
-# CLI tools
+# Packages
 # =============================================================================================
 
-# runs GitHub Actions locally
-brew "act"
 # cat with syntax highlighting and Git integration
 brew "bat"
 # a lightweight window border system for macOS
-brew "borders"
+brew "FelixKratz/formulae/borders"
 # yet another cross-platform graphical process/system monitor
 brew "bottom"
 # defines a standard way of committing rules
 brew "commitizen"
 # query HTTP, HTTPS or FTP server
 brew "curl"
+# GNU pretty good privacy (PGP) package
+brew "gnupg"
 # pack, ship and run any application as a lightweight container
 brew "docker"
-# CLI tool for running SQL queries against JSON, CSV, Excel, Parquet
-brew "dsq"
 # embeddable SQL OLAP Database Management System
 brew "duckdb"
 # modern replacement for 'ls'
@@ -122,8 +117,6 @@ brew "eza"
 brew "fd"
 # command-line fuzzy finder written in go
 brew "fzf"
-# gnu compiler collection
-brew "gcc"
 # syntax-highlighting pager for git and diff output
 brew "git-delta"
 # graph visualization software from at&t and bell labs
@@ -134,8 +127,6 @@ brew "helix"
 brew "jq"
 # kubernetes cli to manage your clusters in style!
 brew "k9s"
-# kubernetes command-line interface
-brew "kubernetes-cli"
 # lazier way to manage everything docker
 brew "lazydocker"
 # simple terminal ui for git commands
@@ -149,7 +140,7 @@ brew "pinentry-mac"
 # search tool like grep and the silver searcher
 brew "ripgrep"
 # a highly customizable macOS status bar replacement
-brew "sketchybar"
+brew "FelixKratz/formulae/sketchybar"
 # Spotify customization
 brew "spicetify-cli"
 # cross-shell prompt for astronauts
@@ -172,83 +163,10 @@ brew "zplug"
 brew "zoxide"
 
 # =============================================================================================
-# Linters, formatters and LSPs
+# LSPs
 # =============================================================================================
 
-# static checker for GitHub Actions workflow files
-brew "actionlint"
-# a language server for Dockerfiles powered by Node.js
-brew "dockerfile-language-server"
-# Language Server and Debugger for Elixir
-brew "elixir-ls"
-# smarter Dockerfile linter to validate best practices
-brew "hadolint"
 # language server protocol for Markdown
 brew "marksman"
 # TOML toolkit written in Rust
 brew "taplo"
-
-# =============================================================================================
-# VSCode extensions
-# =============================================================================================
-
-vscode "alefragnani.project-manager"
-vscode "catppuccin.catppuccin-vsc"
-vscode "charliermarsh.ruff"
-vscode "dorzey.vscode-sqlfluff"
-vscode "drcika.apc-extension"
-vscode "editorconfig.editorconfig"
-vscode "equinusocio.vsc-material-theme-icons"
-vscode "github.copilot"
-vscode "github.copilot-chat"
-vscode "github.vscode-pull-request-github"
-vscode "gleam.gleam"
-vscode "griimick.vhs"
-vscode "ibrahimfadel.yabai-syntax-highlighting"
-vscode "jakebecker.elixir-ls"
-vscode "james-yu.latex-workshop"
-vscode "kdl-org.kdl"
-vscode "marclipovsky.string-manipulation"
-vscode "matangover.mypy"
-vscode "miguelsolorio.fluent-icons"
-vscode "mikestead.dotenv"
-vscode "ms-azuretools.vscode-docker"
-vscode "ms-python.debugpy"
-vscode "ms-python.python"
-vscode "ms-python.vscode-pylance"
-vscode "ms-toolsai.jupyter"
-vscode "ms-toolsai.jupyter-keymap"
-vscode "ms-toolsai.jupyter-renderers"
-vscode "ms-toolsai.vscode-jupyter-cell-tags"
-vscode "ms-toolsai.vscode-jupyter-slideshow"
-vscode "ms-vscode-remote.remote-containers"
-vscode "ms-vscode-remote.remote-ssh"
-vscode "ms-vscode-remote.remote-ssh-edit"
-vscode "ms-vscode-remote.remote-wsl"
-vscode "ms-vscode-remote.vscode-remote-extensionpack"
-vscode "ms-vscode.cpptools"
-vscode "ms-vscode.live-server"
-vscode "ms-vscode.remote-explorer"
-vscode "ms-vscode.remote-server"
-vscode "ms-vscode.test-adapter-converter"
-vscode "naumovs.color-highlight"
-vscode "njpwerner.autodocstring"
-vscode "oderwat.indent-rainbow"
-vscode "peterschmalfeldt.explorer-exclude"
-vscode "ritwickdey.liveserver"
-vscode "robertostermann.inline-parameters-extended"
-vscode "rodolphebarbanneau.python-docstring-highlighter"
-vscode "rust-lang.rust-analyzer"
-vscode "samuelcolvin.jinjahtml"
-vscode "silverquark.dancehelix"
-vscode "sumneko.lua"
-vscode "tamasfe.even-better-toml"
-vscode "tgriesser.avro-schemas"
-vscode "trond-snekvik.simple-rst"
-vscode "vadimcn.vscode-lldb"
-vscode "visualstudioexptteam.intellicode-api-usage-examples"
-vscode "visualstudioexptteam.vscodeintellicode"
-vscode "visualstudioexptteam.vscodeintellicode-completions"
-vscode "vspacecode.whichkey"
-vscode "wakatime.vscode-wakatime"
-vscode "yzhang.markdown-all-in-one"
