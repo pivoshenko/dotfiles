@@ -3,7 +3,7 @@ source "$ZPLUG_HOME/init.zsh"
 # replace default completion selection menu with `fzf`
 zplug "Aloxaf/fzf-tab", depth:1
 
-# a better and friendly `vi(vim)` mode
+# `vi(vim)` mode
 zplug "jeffreytse/zsh-vi-mode", depth:1
 
 # feature-rich syntax highlighting

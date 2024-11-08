@@ -1,8 +1,8 @@
-# remap `zsh-vi-mode` keybindings
+# `zsh-vi-mode` blocks all keybindings
+# so to add extra keybindings, we need to init them after `zsh-vi-mode`
 function zvm_after_init() {
     zvm_bindkey viins '^R' fzf-history-widget
     bindkey '^f' run_find_in_files
     bindkey '^k' run_find_files
 }
-function zvm_after_lazy_keybindings() {
-}
+function zvm_after_lazy_keybindings() {}

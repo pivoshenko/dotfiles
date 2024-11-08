@@ -11,7 +11,7 @@ cdf () {
   cd "$path"
 }
 
-# iterate over sub-directories and pull Git repositories
+# iterate over sub-directories and pull git repositories
 rgp () {
   find . -name ".git" -type d | sed 's/\/.git//' | xargs -P10 -I{} sh -c 'git -C {} fetch --all && git -C {} pull'
 }
@@ -50,7 +50,7 @@ pdm () {
     fi
 }
 
-# delete Python cache directories
+# delete Python cache
 pyclean () {
   find . \
     | grep -E '(__pycache__|\.(mypy_)?cache|\.hypothesis\.py[cod]|\.(pytest_)?cache|\.ropeproject|\.(ruff_)?cache|\.(ipynb_)?checkpoints|.coverage|coverage.xml$)' \

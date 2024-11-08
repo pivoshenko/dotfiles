@@ -120,11 +120,13 @@ alt-shift-tab = "move-workspace-to-monitor --wrap-around next"
 # =================================================
 
 [mode.service.binding]
+# reload config
 esc = ["reload-config", "mode main"]
 # reset layout
 r = ["flatten-workspace-tree", "mode main"]
 # toggle between floating and tiling layout
 f = ["layout floating tiling", "mode main"]
+# close all background windows
 backspace = ["close-all-windows-but-current", "mode main"]
 alt-shift-h = ["join-with left", "mode main"]
 alt-shift-j = ["join-with down", "mode main"]

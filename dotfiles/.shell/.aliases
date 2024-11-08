@@ -7,17 +7,17 @@ alias cat="bat --paging never --decorations never --plain"
 # display local IP address
 alias localip='ipconfig getifaddr en0'
 
-alias ls="eza -a --level=1 --icons"
-
 # copy public key to clipboard
 alias pubkey="cat ~/.ssh/id_rsa.pub | pbcopy | echo '=> Copied to pasteboard.'"
 
-# =============================================================================================
+# =================================================
 # ¯\_(ツ)_/¯
-# =============================================================================================
+# =================================================
 
 alias ld="lazydocker"
 
 alias lg="lazygit"
+
+alias ls="eza -a --level=1 --icons"
 
 alias zj="zellij"

@@ -1,4 +1,8 @@
-# `_fzf_complete_realpath` - preview function for fzf completion
+# =================================================
+# Functions
+# =================================================
+
+# preview function for `fzf` completion
 # - reads input and displays with `bat`, `tree`, or `hexyl` based on the type
 # - supports directories, text files, images, and binary files
 _fzf_complete_realpath() {

@@ -20,8 +20,6 @@ HIST_STAMPS="yyyy-mm-dd"
 # commands starting from whitespace won't be saved in history
 HIST_IGNORE_SPACE="true"
 
-# custom plugins may be added to `~/.oh-my-zsh/custom/plugins/`
-# list of the plugins (there location is `~/.oh-my-zsh/plugins/`)
 plugins=(
   gitfast
 )
@@ -29,7 +27,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # =================================================
-# Plugin Management (zplug)
+# zplug
 # =================================================
 
 export ZPLUG_HOME=$(brew --prefix)/opt/zplug

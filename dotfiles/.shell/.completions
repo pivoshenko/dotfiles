@@ -14,7 +14,7 @@ zstyle ":completion:*" menu no
 # switch groups using `[` and `]`
 zstyle ":fzf-tab:*" switch-group "[" "]"
 
-# preserve my layout
+# preserve custom layout
 local fzf_flags
 zstyle -a ':fzf-tab:*' fzf-flags fzf_flags
 fzf_flags=( "${fzf_flags[@]}" )
