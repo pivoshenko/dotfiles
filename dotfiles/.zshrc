@@ -21,7 +21,23 @@ HIST_STAMPS="yyyy-mm-dd"
 HIST_IGNORE_SPACE="true"
 
 plugins=(
+  # cheatsheet for the 3rd party commands
+  aliases
+  # completions for the `homebrew`
+  brew
+  # completions for the Docker CLI
+  docker
+  docker-compose
+  # fuzzy auto-completion and key bindings
+  fzf
+  # completions for the GitHub CLI
+  gh
+  # completions for the `git`
   gitfast
+  # completions for the `k9s`
+  k9s
+  # completions for the `poetry`
+  poetry
 )
 
 source $ZSH/oh-my-zsh.sh

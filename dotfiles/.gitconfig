@@ -37,7 +37,7 @@ colorMoved = default
 # include custom themes for the `git-delta`
 path = ~/.config/delta/catppuccin.gitconfig
 # include private configuration
-path = ~/.local.gitconfig
+path = ~/.gitconfig.local
 
 [init]
 # override the default branch name for new repositories

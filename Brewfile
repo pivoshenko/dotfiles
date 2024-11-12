@@ -19,45 +19,43 @@ cask "sf-symbols"
 # Apps
 # =============================================================================================
 
-# extend the functionality of DiscordApp by enhancing it with new features
+# Discord themes and plugins engine
 cask "betterdiscord-installer"
-# universal database tool and SQL client
+# database management tool
 cask "dbeaver-community"
-# voice and text chat software
+# voice and text communication platform
 cask "discord"
-# pack, ship and run any application as a lightweight container
+# containers management tool
 cask "docker"
-# cross-platform text expander written in Rust
+# text expander
 cask "espanso"
 # screen colour temperature controller
 cask "flux"
-# font library for icons
-cask "font-symbols-only-nerd-font"
 # web browser
 cask "google-chrome"
 # terminal emulator
 cask "iterm2"
-# HTTP and GraphQL Client
+# HTTP and GraphQL client
 cask "insomnia"
-# jetbrains tools manager
+# JetBrains tools manager
 cask "jetbrains-toolbox"
-# keyboard customiser
+# hotkeys daemon
 cask "karabiner-elements"
-# i3-like tiling window manager for macOS
+# i3-like tiling window manager
 cask "nikitabobko/tap/aerospace"
 # password manager
 cask "nordpass"
-# VPN client for secure internet access and private browsing
+# VPN client
 cask "nordvpn"
-# knowledge base that works on top of a local folder of plain text Markdown files
+# notes and knowledge management tool
 cask "obsidian"
-# control your tools with a few keystrokes
+# apps launcher
 cask "raycast"
-# app that enables mouse-free UI interaction
+# mouse-less controller
 cask "shortcat"
 # music streaming service
 cask "spotify"
-# messaging app with a focus on speed and security
+# messaging app
 cask "telegram"
 # open-source code editor
 cask "visual-studio-code"
@@ -85,36 +83,42 @@ brew "rustup"
 # Packages
 # =============================================================================================
 
-# cat with syntax highlighting and Git integration
+# syntax highlighting with git integration
 brew "bat"
-# yet another cross-platform graphical process/system monitor
+# graphical process/system monitor
 brew "bottom"
-# a lightweight window border system for macOS
-brew "FelixKratz/formulae/borders"
-# a highly customizable macOS status bar replacement
-brew "FelixKratz/formulae/sketchybar"
+# image renderer for the terminal emulators
+brew "catimg"
 # defines a standard way of committing rules
 brew "commitizen"
 # query HTTP, HTTPS or FTP server
 brew "curl"
-# pack, ship and run any application as a lightweight container
-brew "docker"
 # embeddable SQL OLAP Database Management System
 brew "duckdb"
 # modern replacement for ls
 brew "eza"
 # simple, fast and user-friendly alternative to find
 brew "fd"
+# a lightweight window border system for macOS
+brew "FelixKratz/formulae/borders"
+# a highly customizable macOS status bar replacement
+brew "FelixKratz/formulae/sketchybar"
 # command-line fuzzy finder written in go
 brew "fzf"
 # syntax-highlighting pager for git and diff output
 brew "git-delta"
+# GitHub command-line tool
+brew "gh"
+# GitLab command-line tool
+brew "glab"
 # GNU PGP package
 brew "gnupg"
 # graph visualization software from at&t and bell labs
 brew "graphviz"
 # post-modern modal text editor
 brew "helix"
+# command-line hex viewer
+brew "hexyl"
 # lightweight and flexible command-line json processor
 brew "jq"
 # kubernetes cli to manage clusters in style
@@ -123,7 +127,7 @@ brew "k9s"
 brew "lazydocker"
 # simple terminal ui for git commands
 brew "lazygit"
-# fast, highly customisable system info script
+# fast, highly customizable system info script
 brew "neofetch"
 # ambitious vim-fork focused on extensibility and agility
 brew "neovim"

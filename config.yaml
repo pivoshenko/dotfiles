@@ -33,6 +33,9 @@ dotfiles:
   # ~/
   # =================================================
 
+  d_shell:
+    dst: ~/.shell
+    src: .shell
   f_ssh:
     dst: ~/.ssh/config
     src: .ssh/config
@@ -70,20 +73,21 @@ dotfiles:
   # ~/Library/Application Support
   # =================================================
 
-  d_espanso:
+  d_macos_espanso:
     dst: ~/Library/Application Support/espanso
     src: espanso
-  d_pypoetry:
+  d_macos_pypoetry:
     dst: ~/Library/Application Support/pypoetry
     src: pypoetry
 
 profiles:
-  home:
+  macos:
     dotfiles:
       - d_aerospace
-      - d_espanso
-      - d_pypoetry
+      - d_macos_espanso
+      - d_macos_pypoetry
       - d_stylus
+      - d_shell
       - d_wallpapers
       - f_gitconfig
       - f_zed

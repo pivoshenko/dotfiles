@@ -1,14 +1,7 @@
 # delete backup files
 bakclean () {
-  find . -name "*.*.bak" -type f -delete
-  find . -name "*.bak" -type f -delete
-}
-
-# cd into whatever is the forefront Finder window
-cdf () {
-  local path=$(osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)')
-  echo "$path"
-  cd "$path"
+  fd -H -e ".dotdropbak" -t f -x rm
+  fd -H -e ".bak" -t f -x rm
 }
 
 # iterate over sub-directories and pull git repositories
@@ -24,7 +17,7 @@ loadenv () {
     fi
     export $line > /dev/null
   done < "$1"
-  echo "Loaded!"
+  echo "Loaded"
 }
 
 # show pretty `man` page
@@ -50,17 +43,10 @@ pdm () {
     fi
 }
 
-# delete Python cache
-pyclean () {
-  find . \
-    | grep -E '(__pycache__|\.(mypy_)?cache|\.hypothesis\.py[cod]|\.(pytest_)?cache|\.ropeproject|\.(ruff_)?cache|\.(ipynb_)?checkpoints|.coverage|coverage.xml$)' \
-    | xargs rm -rf
-}
-
-# find file and open it
+# find file and open it in the default editor
 run_find_files () { find_files; }
 zle -N run_find_files
 
-# find a match in files and open it
+# find a match in files and open it in the default editor
 run_find_in_files () { find_in_files; }
 zle -N run_find_in_files
