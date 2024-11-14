@@ -42,11 +42,3 @@ pdm () {
         command pdm $@
     fi
 }
-
-# find file and open it in the default editor
-run_find_files () { find_files; }
-zle -N run_find_files
-
-# find a match in files and open it in the default editor
-run_find_in_files () { find_in_files; }
-zle -N run_find_in_files

@@ -103,6 +103,7 @@
   // Editor
   // =================================================
 
+  "relative_line_numbers": true,
   "autosave": {
     "after_delay": {
       "milliseconds": 500
@@ -141,6 +142,8 @@
     "html": true,
     // syntax highlighting for the INI files
     "ini": true,
+    // syntax highlighting for the KDL files
+    "kdl": true,
     // syntax highlighting for the Lua files
     "lua": true,
     // support for `ruff` as the Python linter and formatter

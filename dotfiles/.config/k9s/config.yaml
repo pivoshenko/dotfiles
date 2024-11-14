@@ -1,41 +1,22 @@
 k9s:
-  disablePodCounting: false
-  imageScans:
-    enable: false
-    exclusions:
-      labels: {}
-      namespaces: []
-  logger:
-    buffer: 5000
-    showTime: false
-    sinceSeconds: -1
-    tail: 100
-    textWrap: false
-  liveViewAutoRefresh: false
-  maxConnRetry: 5
-  noExitOnCtrlC: false
-  readOnly: false
-  refreshRate: 2
-  shellPod:
-    image: busybox:1.35.0
-    limits:
-      cpu: 100m
-      memory: 100Mi
-    namespace: default
-  skipLatestRevCheck: false
-  thresholds:
-    cpu:
-      critical: 90
-      warn: 70
-    memory:
-      critical: 90
-      warn: 70
+  # =================================================
+  # Theme
+  # =================================================
+
   ui:
+    # disable breadcrumb navigation
     crumbsless: false
+    # do not default to full screen
     defaultsToFullScreen: false
+    # disable mouse interaction
     enableMouse: false
+    # run in non-headless mode
     headless: false
+    # retain logo display
     logoless: false
+    # keep icons enabled
     noIcons: false
+    # reactive behavior is disabled
     reactive: false
+    # set custom theme
     skin: catppuccin_macchiato

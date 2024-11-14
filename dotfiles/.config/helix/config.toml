@@ -57,13 +57,13 @@ right = [
 ]
 separator = "│"
 
+[editor.whitespace.render]
+newline = "none"
+space = "all"
+tab = "all"
+
 [editor.whitespace.characters]
 nbsp = "⍽"
 space = "·"
 tab = "→"
 tabpad = "·"
-
-[editor.whitespace.render]
-newline = "none"
-space = "all"
-tab = "all"

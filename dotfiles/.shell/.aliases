@@ -15,6 +15,6 @@ alias ld="lazydocker"
 
 alias lg="lazygit"
 
-alias ls="eza -a --level=1 --icons"
+alias ls="eza -a --level=1 --icons --color=always"
 
 alias zj="zellij"

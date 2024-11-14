@@ -46,6 +46,7 @@ source $ZSH/oh-my-zsh.sh
 # zplug
 # =================================================
 
+# path to the `zplug` installation
 export ZPLUG_HOME=$(brew --prefix)/opt/zplug
 source $ZPLUG_HOME/init.zsh
 
@@ -61,6 +62,7 @@ source "$HOME/.shell/.exports"
 source "$HOME/.shell/.functions"
 source "$HOME/.shell/.fzf"
 source "$HOME/.shell/.keybindings"
+source "$HOME/.shell/.widgets"
 
 if [[ -f "$HOME/.shell/.local" ]]; then
   source "$HOME/.shell/.local"
