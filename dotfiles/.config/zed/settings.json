@@ -152,5 +152,10 @@
     "sql": true,
     // syntax highlighting for the TOML files
     "toml": true
+  },
+
+  "file_types": {
+    "TOML": ["poetry.lock"],
+    "SQL": ["*.sql.j2"]
   }
 }

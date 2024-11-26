@@ -49,6 +49,8 @@ cask "nordpass"
 cask "nordvpn"
 # notes and knowledge management tool
 cask "obsidian"
+# replacement for Docker Desktop
+cask "orbstack"
 # apps launcher
 cask "raycast"
 # mouse-less controller
