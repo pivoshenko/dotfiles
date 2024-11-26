@@ -119,8 +119,8 @@ dotfiles:
     dst: ~/.config/starship.toml
     src: .config/starship.toml
   f_zed:
-    dst: ~/.config/zed/settings.json
-    src: .config/zed/settings.json
+    dst: ~/.config/zed
+    src: .config/zed
 
   # =================================================
   # ~/Library/Application Support
