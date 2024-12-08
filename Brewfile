@@ -125,6 +125,8 @@ brew "helix"
 brew "hexyl"
 # lightweight and flexible command-line json processor
 brew "jq"
+# cross-platform software keyboard remapper for Linux, macOS and Windows
+brew "kanata"
 # kubernetes cli to manage clusters in style
 brew "k9s"
 # lazier way to manage everything docker
