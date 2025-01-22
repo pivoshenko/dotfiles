@@ -35,9 +35,6 @@ cask "flux"
 cask "ghostty"
 # web browser
 cask "google-chrome"
-# terminal emulator
-cask "iterm2"
-# HTTP and GraphQL client
 cask "insomnia"
 # JetBrains tools manager
 cask "jetbrains-toolbox"
