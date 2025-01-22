@@ -31,6 +31,8 @@ cask "docker"
 cask "espanso"
 # screen colour temperature controller
 cask "flux"
+# terminal emulator
+cask "ghostty"
 # web browser
 cask "google-chrome"
 # terminal emulator
@@ -49,8 +51,6 @@ cask "nordpass"
 cask "nordvpn"
 # notes and knowledge management tool
 cask "obsidian"
-# replacement for Docker Desktop
-cask "orbstack"
 # apps launcher
 cask "raycast"
 # mouse-less controller
