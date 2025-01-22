@@ -60,7 +60,7 @@
 
   // disable chat panel
   "chat_panel": {
-    "button": false,
+    "button": "never",
     "dock": "left"
   },
 
@@ -134,16 +134,18 @@
     "dockerfile": true,
     // syntax highlighting for the dotenv files
     "env": true,
+    // syntax highlighting for the Gleam files
+    "gleam": true,
     // syntax highlighting for the git files
     "git-firefly": true,
-    // syntax highlighting for the GraphQL files
-    "graphql": true,
     // syntax highlighting for the HTML files
     "html": true,
     // syntax highlighting for the INI files
     "ini": true,
     // syntax highlighting for the KDL files
     "kdl": true,
+    // syntax highlighting for log files
+    "log": true,
     // syntax highlighting for the Lua files
     "lua": true,
     // support for `ruff` as the Python linter and formatter
