@@ -13,11 +13,17 @@ bufferline = "always"
 color-modes = true
 completion-trigger-len = 1
 cursorline = true
+# minimum severity to show a diagnostic after the end of a line
+end-of-line-diagnostics = "hint"
 line-number = "relative"
 mouse = true
 rulers = [100]
 shell = ["zsh", "-c"]
 true-color = true
+
+[editor.inline-diagnostics]
+# show a diagnostic on the primary cursor's line
+cursor-line = "error"
 
 [editor.cursor-shape]
 insert = "bar"
