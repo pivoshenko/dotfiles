@@ -375,7 +375,12 @@
     "Alpha Component": 1,
     "Green Component": 0.77425903081893921
   },
-  "Jobs to Ignore": ["rlogin", "ssh", "slogin", "telnet"],
+  "Jobs to Ignore": [
+    "rlogin",
+    "ssh",
+    "slogin",
+    "telnet"
+  ],
   "Badge Color (Dark)": {
     "Red Component": 0.92929404973983765,
     "Color Space": "P3",
