@@ -31,10 +31,7 @@ cask "docker"
 cask "espanso"
 # screen colour temperature controller
 cask "flux"
-# terminal emulator
-cask "ghostty"
-# web browser
-cask "google-chrome"
+# HTTP and GraphQL Client
 cask "insomnia"
 # JetBrains tools manager
 cask "jetbrains-toolbox"
@@ -46,18 +43,22 @@ cask "nikitabobko/tap/aerospace"
 cask "nordpass"
 # VPN client
 cask "nordvpn"
+# interactive tool for analyzing MongoDB data
+cask "mongodb-compass"
 # notes and knowledge management tool
 cask "obsidian"
+# LLMs
+cask "ollama"
 # apps launcher
 cask "raycast"
-# mouse-less controller
-cask "shortcat"
 # music streaming service
 cask "spotify"
 # messaging app
 cask "telegram"
 # open-source code editor
-cask "visual-studio-code"
+# due to the issue with the latest version and APC extension, installation should be done via dmg file
+# https://code.visualstudio.com/updates/v1_92
+# cask "visual-studio-code"
 # AI code editor
 cask "zed"
 # web browser for pure focus
@@ -167,3 +168,39 @@ brew "zoxide"
 brew "marksman"
 # TOML toolkit written in Rust
 brew "taplo"
+
+# =================================================
+# VSCode Extensions
+# =================================================
+
+vscode "catppuccin.catppuccin-vsc"
+vscode "charliermarsh.ruff"
+vscode "dorzey.vscode-sqlfluff"
+vscode "drcika.apc-extension"
+vscode "editorconfig.editorconfig"
+vscode "equinusocio.vsc-material-theme-icons"
+vscode "github.copilot"
+vscode "github.copilot-chat"
+vscode "github.vscode-pull-request-github"
+vscode "gleam.gleam"
+vscode "jock.svg"
+vscode "kdl-org.kdl"
+vscode "kend.dancehelixkey"
+vscode "marclipovsky.string-manipulation"
+vscode "matangover.mypy"
+vscode "miguelsolorio.fluent-icons"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-toolsai.jupyter"
+vscode "ms-toolsai.jupyter-keymap"
+vscode "ms-toolsai.jupyter-renderers"
+vscode "robertostermann.inline-parameters-extended"
+vscode "rodolphebarbanneau.python-docstring-highlighter"
+vscode "samuelcolvin.jinjahtml"
+vscode "sumneko.lua"
+vscode "tamasfe.even-better-toml"
+vscode "tgriesser.avro-schemas"
+vscode "visualstudioexptteam.intellicode-api-usage-examples"
+vscode "visualstudioexptteam.vscodeintellicode"
+vscode "yzhang.markdown-all-in-one"
