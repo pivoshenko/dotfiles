@@ -1,8 +1,3 @@
-# =================================================
-# Misc
-# =================================================
-
-# start `aerospace` at login
 start-at-login = true
 
 # =================================================
@@ -31,7 +26,7 @@ inner.horizontal = 10
 inner.vertical = 10
 outer.left = 10
 outer.bottom = 10
-outer.top = 55
+outer.top = 10
 outer.right = 10
 
 # =================================================
@@ -143,3 +138,215 @@ minus = "resize smart -50"
 equal = "resize smart +50"
 enter = "mode main"
 esc = "mode main"
+
+# =================================================
+# Workspaces - #1
+# =================================================
+
+[[on-window-detected]]
+if.app-id = "com.hnc.Discord"
+run = "move-node-to-workspace 1"
+
+[[on-window-detected]]
+if.app-id = "ru.keepcoder.Telegram"
+run = "move-node-to-workspace 1"
+
+# =================================================
+# Workspaces - #2
+# =================================================
+
+# =================================================
+# Workspaces - #3
+# =================================================
+
+[[on-window-detected]]
+if.app-id = "md.obsidian"
+run = "move-node-to-workspace 3"
+
+# =================================================
+# Workspaces - #4
+# =================================================
+
+[[on-window-detected]]
+if.app-id = "app.zen-browser.zen"
+run = "move-node-to-workspace 4"
+
+# =================================================
+# Workspaces - #5
+# =================================================
+
+[[on-window-detected]]
+if.app-id = "com.googlecode.iterm2"
+run = "move-node-to-workspace 5"
+
+[[on-window-detected]]
+if.app-id = "com.mitchellh.ghostty"
+run = "move-node-to-workspace 5"
+
+# =================================================
+# Workspaces - #6
+# =================================================
+
+[[on-window-detected]]
+if.app-id = "com.microsoft.VSCode"
+run = "move-node-to-workspace 6"
+
+[[on-window-detected]]
+if.app-id = "dev.zed.Zed"
+run = "move-node-to-workspace 6"
+
+# =================================================
+# Workspaces - #7
+# =================================================
+
+[[on-window-detected]]
+if.app-id = "com.mongodb.compass"
+run = "move-node-to-workspace 7"
+
+[[on-window-detected]]
+if.app-id = "org.jkiss.dbeaver.core.product"
+run = "move-node-to-workspace 7"
+
+# =================================================
+# Workspaces - #8
+# =================================================
+
+[[on-window-detected]]
+if.app-id = "com.insomnia.app"
+run = "move-node-to-workspace 8"
+
+# =================================================
+# Workspaces - Floating Applications
+# =================================================
+
+[[on-window-detected]]
+if.app-id = "app.betterdiscord.installer"
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = "com.apple.ActivityMonitor"
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = "com.apple.AddressBook"
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = "com.apple.AppStore"
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = "com.apple.Dictionaries"
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = "com.apple.finder"
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = "com.apple.findmy"
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = "com.apple.iCal"
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = "com.apple.Mail"
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = "com.apple.mail"
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = "com.apple.Maps"
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = "com.apple.Messenger"
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = "com.apple.Music"
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = "com.apple.Notes"
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = "com.apple.PhotoBooth"
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = "com.apple.Photos"
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = "com.apple.Preview"
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = "com.apple.reminders"
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = "com.apple.Safari"
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = "com.apple.Siri"
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = "com.apple.systempreferences"
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = "com.apple.Terminal"
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = "com.docker.docker"
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = "com.federicoterzi.espanso"
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = "com.jetbrains.toolbox.helper"
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = "com.macpaw.CleanMyMac4"
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = "com.nordsec.nordpass"
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = "com.nordvpn.macos"
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = "com.spotify.client"
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = "org.herf.Flux"
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = "org.pqrs.Karabiner-Elements.Settings"
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = "org.pqrs.Karabiner-EventViewer"
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = "pl.maketheweb.cleanshotx"
+run = "layout floating"
