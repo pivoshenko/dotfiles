@@ -13,7 +13,7 @@ after-startup-command = []
 exec-on-workspace-change = [
   "/bin/bash",
   "-c",
-  "sketchybar --trigger aerospace_workspace_changed FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE",
+  "sketchybar --trigger aerospace_workspace_changed FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE"
 ]
 
 # =================================================
@@ -27,6 +27,8 @@ inner.vertical = 10
 outer.left = 10
 outer.bottom = 10
 outer.top = 55
+# for the M1 MacBook
+# outer.top = [{ monitor.main = 10 }, { monitor.secondary = 55 }, 10]
 outer.right = 10
 
 # =================================================
@@ -148,6 +150,14 @@ if.app-id = "com.hnc.Discord"
 run = "move-node-to-workspace 1"
 
 [[on-window-detected]]
+if.app-id = "com.microsoft.Outlook"
+run = "move-node-to-workspace 1"
+
+[[on-window-detected]]
+if.app-id = "com.microsoft.teams2"
+run = "move-node-to-workspace 1"
+
+[[on-window-detected]]
 if.app-id = "ru.keepcoder.Telegram"
 run = "move-node-to-workspace 1"
 
@@ -169,6 +179,10 @@ run = "move-node-to-workspace 3"
 
 [[on-window-detected]]
 if.app-id = "app.zen-browser.zen"
+run = "move-node-to-workspace 4"
+
+[[on-window-detected]]
+if.app-id = "com.google.Chrome"
 run = "move-node-to-workspace 4"
 
 # =================================================
@@ -256,10 +270,6 @@ if.app-id = "com.apple.Mail"
 run = "layout floating"
 
 [[on-window-detected]]
-if.app-id = "com.apple.mail"
-run = "layout floating"
-
-[[on-window-detected]]
 if.app-id = "com.apple.Maps"
 run = "layout floating"
 
@@ -324,6 +334,22 @@ if.app-id = "com.macpaw.CleanMyMac4"
 run = "layout floating"
 
 [[on-window-detected]]
+if.app-id = "com.microsoft.Excel"
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = "com.microsoft.OneDrive"
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = "com.microsoft.Powerpoint"
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = "com.microsoft.Word"
+run = "layout floating"
+
+[[on-window-detected]]
 if.app-id = "com.nordsec.nordpass"
 run = "layout floating"
 
@@ -332,7 +358,19 @@ if.app-id = "com.nordvpn.macos"
 run = "layout floating"
 
 [[on-window-detected]]
+if.app-id = "com.paloaltonetworks.GlobalProtect.client"
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = "com.postmanlabs.mac"
+run = "layout floating"
+
+[[on-window-detected]]
 if.app-id = "com.spotify.client"
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = "io.rancherdesktop.app"
 run = "layout floating"
 
 [[on-window-detected]]
