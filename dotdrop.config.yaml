@@ -71,9 +71,9 @@ dotfiles:
   d_fsh:
     dst: ~/.config/fsh
     src: .config/fsh
-  # d_helix:
-  #   dst: ~/.config/helix
-  #   src: .config/helix
+  d_helix:
+    dst: ~/.config/helix
+    src: .config/helix
   # d_iterm2:
   #   dst: ~/.config/iterm2
   #   src: .config/iterm2
@@ -147,7 +147,7 @@ profiles:
       - d_bottom
       - d_delta
       - d_fsh
-      # - d_helix
+      - d_helix
       # - d_iterm2
       # - d_k9s
       # - d_karabiner
