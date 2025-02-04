@@ -74,9 +74,9 @@ dotfiles:
   d_helix:
     dst: ~/.config/helix
     src: .config/helix
-  # d_iterm2:
-  #   dst: ~/.config/iterm2
-  #   src: .config/iterm2
+  d_iterm2:
+    dst: ~/.config/iterm2
+    src: .config/iterm2
   # d_k9s:
   #   dst: ~/.config/k9s
   #   src: .config/k9s
@@ -148,7 +148,7 @@ profiles:
       - d_delta
       - d_fsh
       - d_helix
-      # - d_iterm2
+      - d_iterm2
       # - d_k9s
       # - d_karabiner
       # - d_lazygit
