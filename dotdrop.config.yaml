@@ -77,9 +77,9 @@ dotfiles:
   d_iterm2:
     dst: ~/.config/iterm2
     src: .config/iterm2
-  # d_k9s:
-  #   dst: ~/.config/k9s
-  #   src: .config/k9s
+  d_k9s:
+    dst: ~/.config/k9s
+    src: .config/k9s
   # d_karabiner:
   #   dst: ~/.config/karabiner
   #   src: .config/karabiner
@@ -122,6 +122,9 @@ dotfiles:
   # d_macos_pypoetry:
   #   dst: ~/Library/Application Support/pypoetry
   #   src: pypoetry
+  d_macos_k9s:
+    dst: ~/Library/Application Support/k9s
+    src: .config/k9s
 
   # f_macos_vscode:
   #   dst: ~/Library/Application Support/Code/User/settings.json
@@ -149,7 +152,7 @@ profiles:
       - d_fsh
       - d_helix
       - d_iterm2
-      # - d_k9s
+      - d_k9s
       # - d_karabiner
       # - d_lazygit
       # - d_neofetch
@@ -161,6 +164,7 @@ profiles:
       # - d_zellij
       # - f_starship
       # ~/Library/Application Support
+      - d_macos_k9s
       # - d_macos_espanso
       # - d_macos_pypoetry
       # - f_macos_vscode
