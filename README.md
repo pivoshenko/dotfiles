@@ -15,7 +15,7 @@
   - [Installation](#installation)
   - [Apps](#apps)
     - [Tiling Window Manager](#tiling-window-manager)
-    - [Hotkey Daemons](#hotkey-daemons)
+    - [Hotkeys Daemon](#hotkeys-daemon)
 
 > [!CAUTION]
 > Currently, my dotfiles are under heavy redesign so this README and configs are a bit outdated.
@@ -82,7 +82,7 @@ Some applications, typically used in "quick pop-up" mode, follow a **floating la
 
 Additionally, workspaces are integrated with [`SketchyBar`](https://github.com/FelixKratz/SketchyBar) for better visibility and interaction.
 
-### Hotkey Daemons
+### Hotkeys Daemon
 
 Because I am using a primarily external keyboard and in most of my apps I rely on either Vi/Kakoune motions I find it painful to use the mouse as it requires moving my right hand out of the keyboard and distracts my "zen" state. In most of the dev apps, you can enable such modes but in the default MacOS apps or windows manager such functionality is absent To resolve this issue I am using [`Karabinder`](https://github.com/pqrs-org/Karabiner-Elements).
 
