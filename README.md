@@ -15,6 +15,7 @@
   - [Installation](#installation)
   - [Apps](#apps)
     - [Tiling Window Manager](#tiling-window-manager)
+    - [Hotkey Daemons](#hotkey-daemons)
 
 > [!CAUTION]
 > Currently, my dotfiles are under heavy redesign so this README and configs are a bit outdated.
@@ -63,7 +64,7 @@ I am using [`brew`](https://brew.sh) to install both GUI and CLI applications. R
 
 ### Tiling Window Manager
 
-I use [`aerospace`](https://github.com/nikitabobko/AeroSpace) as a tiling window manager for macOS, which essentially replicates i3 functionality.
+I use [`AeroSpace`](https://github.com/nikitabobko/AeroSpace) as a tiling window manager for macOS, which essentially replicates i3 functionality.
 
 My configuration can be found [here](dotfiles/.config/aerospace/). The core idea is to define the following workspaces and bind relevant applications to them:
 
@@ -79,4 +80,11 @@ My configuration can be found [here](dotfiles/.config/aerospace/). The core idea
 
 Some applications, typically used in "quick pop-up" mode, follow a **floating layout** and are not bound to any workspace.
 
-Additionally, workspaces are integrated with `sketchybar` for better visibility and interaction.
+Additionally, workspaces are integrated with [`SketchyBar`](https://github.com/FelixKratz/SketchyBar) for better visibility and interaction.
+
+### Hotkey Daemons
+
+Because I am using a primarily external keyboard and in most of my apps I rely on either Vi/Kakoune motions I find it painful to use the mouse as it requires moving my right hand out of the keyboard and distracts my "zen" state. In most of the dev apps, you can enable such modes but in the default MacOS apps or windows manager such functionality is absent To resolve this issue I am using [`Karabinder`](https://github.com/pqrs-org/Karabiner-Elements).
+
+My configuration can be found [here](dotfiles/.config/karabiner/). The main idea is to implement [home row mode](https://precondition.github.io/home-row-mods) using this [guide and settings](https://havn.blog/2024/03/03/a-good-way.html).
+
