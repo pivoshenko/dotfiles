@@ -164,10 +164,16 @@ brew "zoxide"
 # LSPs
 # =================================================
 
+# language server and debugger for Elixir
+brew "elixir-ls"
+# Erlang language server
+brew "erlang_ls"
 # language server protocol for Markdown
 brew "marksman"
 # TOML toolkit written in Rust
 brew "taplo"
+# language server for Yaml Files
+brew "yaml-language-server"
 
 # =================================================
 # VSCode Extensions
