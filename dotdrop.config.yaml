@@ -80,9 +80,9 @@ dotfiles:
   d_k9s:
     dst: ~/.config/k9s
     src: .config/k9s
-  # d_karabiner:
-  #   dst: ~/.config/karabiner
-  #   src: .config/karabiner
+  d_karabiner:
+    dst: ~/.config/karabiner
+    src: .config/karabiner
   # d_lazygit:
   #   dst: ~/.config/lazygit
   #   src: .config/lazygit
@@ -153,7 +153,7 @@ profiles:
       - d_helix
       - d_iterm2
       - d_k9s
-      # - d_karabiner
+      - d_karabiner
       # - d_lazygit
       # - d_neofetch
       # - d_sketchybar
