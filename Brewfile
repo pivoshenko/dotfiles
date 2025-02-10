@@ -31,6 +31,8 @@ cask "docker"
 cask "espanso"
 # screen colour temperature controller
 cask "flux"
+# game development engine
+cask "godot"
 # HTTP and GraphQL Client
 cask "insomnia"
 # JetBrains tools manager
