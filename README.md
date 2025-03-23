@@ -21,7 +21,9 @@
 
 What's in here?
 
-- `brew` dependencies, including apps, fonts, LSPs, extensions, etc.
+- My `brew` dependencies, including apps, fonts, LSPs, extensions, etc., see [`Brewfile`](Brewfile)
+- My macOS default configurations, see [`macos`](macos/default.sh)
+- My wallpapers set, see [`wallpapers`](wallpapers)
 
 ## Main principles
 
@@ -30,7 +32,7 @@ What's in here?
 - Simplicity
 - One style
   - [JetBrains Mono Font](https://www.jetbrains.com/lp/mono)
-  - [Catppuccin Macchiato](https://github.com/catppuccin/catppuccin) color palette
+  - [Catppuccin Macchiato Mauve](https://github.com/catppuccin/catppuccin) color palette
 - Reduced visual noise, only important things should be shown
 
 ## Installation
