@@ -12,7 +12,6 @@ tap "homebrew/services"
 cask "font-jetbrains-mono-nerd-font"
 cask "font-space-mono-nerd-font"
 cask "font-symbols-only-nerd-font"
-cask "font-iosevka-term-nerd-font"
 cask "sf-symbols"
 
 # =================================================
@@ -31,12 +30,8 @@ cask "docker"
 cask "espanso"
 # screen colour temperature controller
 cask "flux"
-# game development engine
-cask "godot"
 # HTTP and GraphQL Client
 cask "insomnia"
-# JetBrains tools manager
-cask "jetbrains-toolbox"
 # hotkeys daemon
 cask "karabiner-elements"
 # i3-like tiling window manager
@@ -57,10 +52,8 @@ cask "raycast"
 cask "spotify"
 # messaging app
 cask "telegram"
-# open-source code editor
-# due to the issue with the latest version and APC extension, installation should be done via dmg file
-# https://code.visualstudio.com/updates/v1_92
-# cask "visual-studio-code"
+# code editor
+cask "visual-studio-code"
 # AI code editor
 cask "zed"
 # web browser for pure focus
@@ -91,8 +84,6 @@ brew "bat"
 brew "bottom"
 # image renderer for the terminal emulators
 brew "catimg"
-# defines a standard way of committing rules
-brew "commitizen"
 # query HTTP, HTTPS or FTP server
 brew "curl"
 # embeddable SQL OLAP Database Management System
@@ -109,24 +100,20 @@ brew "FelixKratz/formulae/borders"
 brew "FelixKratz/formulae/sketchybar"
 # command-line fuzzy finder written in go
 brew "fzf"
+# command-line shell for UNIX-like operating systems
+brew "fish"
 # syntax-highlighting pager for git and diff output
 brew "git-delta"
 # GitHub command-line tool
 brew "gh"
-# GitLab command-line tool
-brew "glab"
 # GNU PGP package
 brew "gnupg"
 # graph visualization software from at&t and bell labs
 brew "graphviz"
 # post-modern modal text editor
 brew "helix"
-# command-line hex viewer
-brew "hexyl"
 # lightweight and flexible command-line json processor
 brew "jq"
-# cross-platform software keyboard remapper for Linux, macOS and Windows
-brew "kanata"
 # kubernetes cli to manage clusters in style
 brew "k9s"
 # lazier way to manage everything docker
@@ -145,10 +132,8 @@ brew "ripgrep"
 brew "spicetify-cli"
 # cross-shell prompt for astronauts
 brew "starship"
-# display directories as trees (with optional color/html output)
+# display directories as trees
 brew "tree"
-# command-line unarchiving tools supporting multiple formats
-brew "unar"
 # your cli home video recorder
 brew "vhs"
 # internet file retriever
@@ -176,39 +161,3 @@ brew "marksman"
 brew "taplo"
 # language server for Yaml Files
 brew "yaml-language-server"
-
-# =================================================
-# VSCode Extensions
-# =================================================
-
-vscode "catppuccin.catppuccin-vsc"
-vscode "charliermarsh.ruff"
-vscode "dorzey.vscode-sqlfluff"
-vscode "drcika.apc-extension"
-vscode "editorconfig.editorconfig"
-vscode "equinusocio.vsc-material-theme-icons"
-vscode "github.copilot"
-vscode "github.copilot-chat"
-vscode "github.vscode-pull-request-github"
-vscode "gleam.gleam"
-vscode "jock.svg"
-vscode "kdl-org.kdl"
-vscode "kend.dancehelixkey"
-vscode "marclipovsky.string-manipulation"
-vscode "matangover.mypy"
-vscode "miguelsolorio.fluent-icons"
-vscode "ms-azuretools.vscode-docker"
-vscode "ms-python.python"
-vscode "ms-python.vscode-pylance"
-vscode "ms-toolsai.jupyter"
-vscode "ms-toolsai.jupyter-keymap"
-vscode "ms-toolsai.jupyter-renderers"
-vscode "robertostermann.inline-parameters-extended"
-vscode "rodolphebarbanneau.python-docstring-highlighter"
-vscode "samuelcolvin.jinjahtml"
-vscode "sumneko.lua"
-vscode "tamasfe.even-better-toml"
-vscode "tgriesser.avro-schemas"
-vscode "visualstudioexptteam.intellicode-api-usage-examples"
-vscode "visualstudioexptteam.vscodeintellicode"
-vscode "yzhang.markdown-all-in-one"
