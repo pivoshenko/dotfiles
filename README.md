@@ -10,26 +10,18 @@
 </p>
 
 - [pivoshenko's dotfiles](#pivoshenkos-dotfiles)
-  - [Contents](#contents)
+  - [Overview](#overview)
   - [Main principles](#main-principles)
   - [Installation](#installation)
-  - [Apps](#apps)
-    - [Tiling Window Manager](#tiling-window-manager)
-    - [Hotkeys Daemon](#hotkeys-daemon)
 
 > [!CAUTION]
 > Currently, my dotfiles are under heavy redesign so this README and configs are a bit outdated.
-> One of the main goals is to move to Nix so stay tuned! ETA ~ a couple of weeks.
 
-## Contents
+## Overview
 
 What's in here?
 
-- All my `brew` dependencies, including applications, fonts, LSPs, etc.
-- All my `macOS` default configurations
-- All my `shell` configurations
-- All my `VSCode` and `Zed` configurations
-- All my other `.configs/` and [`wallpapers/`](wallpapers)
+- `brew` dependencies, including apps, fonts, LSPs, extensions, etc.
 
 ## Main principles
 
@@ -37,7 +29,7 @@ What's in here?
 - Consistency
 - Simplicity
 - One style
-  - [JetBrainsMono](https://www.jetbrains.com/lp/mono) font
+  - [JetBrains Mono Font](https://www.jetbrains.com/lp/mono)
   - [Catppuccin Macchiato](https://github.com/catppuccin/catppuccin) color palette
 - Reduced visual noise, only important things should be shown
 
@@ -52,39 +44,3 @@ I am using [`dotdrop`](https://github.com/deadc0de6/dotdrop) to manage dotfiles.
 ```shell
 dotdrop install -c dotdrop.config.yaml -p macos --force
 ```
-
-> [!NOTE]
-> To change the theme in applications such as Zen Browser, Spotify, etc please follow the instructions in the official [Catppuccin repository](https://github.com/catppuccin/catppuccin) as those themes can't be exported/imported easily as config.
->
-> My personal go choice is *Macchiato* with *Mauve* flavor
-
-## Apps
-
-I am using [`brew`](https://brew.sh) to install both GUI and CLI applications. Resulting [`Brewfile`](Brewfile) contains everything.
-
-### Tiling Window Manager
-
-I use [`AeroSpace`](https://github.com/nikitabobko/AeroSpace) as a tiling window manager for macOS, which essentially replicates i3 functionality.
-
-My configuration can be found [here](dotfiles/.config/aerospace/). The core idea is to define the following workspaces and bind relevant applications to them:
-
-- #1 Comms (Telegram, Discord, etc.)
-- #2 Media
-- #3 Notes (Obsidian)
-- #4 Browsing (Zen, Chrome)
-- #5 Terminal (iTerm2, Ghostty)
-- #6 Coding (Zed, VSCode)
-- #7 Databases (MongoDB Compass, DBeaver)
-- #8 Misc (Insomnia, Postman)
-- #9 Misc
-
-Some applications, typically used in "quick pop-up" mode, follow a **floating layout** and are not bound to any workspace.
-
-Additionally, workspaces are integrated with [`SketchyBar`](https://github.com/FelixKratz/SketchyBar) for better visibility and interaction.
-
-### Hotkeys Daemon
-
-Because I am using a primarily external keyboard and in most of my apps I rely on either Vi/Kakoune motions I find it painful to use the mouse as it requires moving my right hand out of the keyboard and distracts my "zen" state. In most of the dev apps, you can enable such modes but in the default MacOS apps or windows manager such functionality is absent To resolve this issue I am using [`Karabinder`](https://github.com/pqrs-org/Karabiner-Elements).
-
-My configuration can be found [here](dotfiles/.config/karabiner/). The main idea is to implement [home row mode](https://precondition.github.io/home-row-mods) using this [guide and settings](https://havn.blog/2024/03/03/a-good-way.html).
-
