@@ -20,34 +20,9 @@ dotfiles:
   # ~/
   # =================================================
 
-  # d_ipython:
-  #   dst: ~/.ipython
-  #   src: .ipython
-  # d_jupyterlab:
-  #   dst: ~/.jupyter/lab/user-settings
-  #   src: .jupyter/lab/user-settings
-  # d_shell:
-  #   dst: ~/.shell
-  #   src: .shell
   d_wallpapers:
     dst: ~/.wallpapers
-    src: wallpapers
-
-  # f_gitconfig:
-  #   dst: ~/.gitconfig
-  #   src: .gitconfig
-  # f_gnupg:
-  #   dst: ~/.gnupg/gpg-agent.conf
-  #   src: .gnupg/gpg-agent.conf
-  # f_ssh:
-  #   dst: ~/.ssh/config
-  #   src: .ssh/config
-  # f_zplugrc:
-  #   dst: ~/.zplugrc
-  #   src: .zplugrc
-  # f_zshrc:
-  #   dst: ~/.zshrc
-  #   src: .zshrc
+    src: ../wallpapers
 
   # =================================================
   # ~/.config
@@ -56,115 +31,16 @@ dotfiles:
   d_aerospace:
     dst: ~/.config/aerospace
     src: .config/aerospace
-  d_bat:
-    dst: ~/.config/bat
-    src: .config/bat
-  d_borders:
-    dst: ~/.config/borders
-    src: .config/borders
-  d_bottom:
-    dst: ~/.config/bottom
-    src: .config/bottom
-  d_delta:
-    dst: ~/.config/delta
-    src: .config/delta
-  d_fsh:
-    dst: ~/.config/fsh
-    src: .config/fsh
-  d_helix:
-    dst: ~/.config/helix
-    src: .config/helix
-  d_iterm2:
-    dst: ~/.config/iterm2
-    src: .config/iterm2
-  d_k9s:
-    dst: ~/.config/k9s
-    src: .config/k9s
-  d_karabiner:
-    dst: ~/.config/karabiner
-    src: .config/karabiner
-  # d_lazygit:
-  #   dst: ~/.config/lazygit
-  #   src: .config/lazygit
-  # d_neofetch:
-  #   dst: ~/.config/neofetch
-  #   src: .config/neofetch
-  # d_sketchybar:
-  #   dst: ~/.config/sketchybar
-  #   src: .config/sketchybar
-  # d_stylus:
-  #   dst: ~/.config/stylus
-  #   src: .config/stylus
-  # d_yazi:
-  #   dst: ~/.config/yazi
-  #   src: .config/yazi
-  # d_zed:
-  #   dst: ~/.config/zed
-  #   src: .config/zed
-  # d_zen_browser:
-  #   dst: ~/.config/zen-browser
-  #   src: .config/zen-browser
-  # d_zellij:
-  #   dst: ~/.config/zellij
-  #   src: .config/zellij
-
-  # f_starship:
-  #   dst: ~/.config/starship.toml
-  #   src: .config/starship.toml
 
   # =================================================
   # ~/Library/Application Support
   # =================================================
 
-  # d_macos_espanso:
-  #   dst: ~/Library/Application Support/espanso
-  #   src: espanso
-  # d_macos_pypoetry:
-  #   dst: ~/Library/Application Support/pypoetry
-  #   src: pypoetry
-  d_macos_k9s:
-    dst: ~/Library/Application Support/k9s
-    src: .config/k9s
-
-  # f_macos_vscode:
-  #   dst: ~/Library/Application Support/Code/User/settings.json
-  #   src: vscode/settings.json
-
 profiles:
   macos:
     dotfiles:
       # ~/
-      # - d_ipython
-      # - d_jupyterlab
-      # - d_shell
-      # - d_wallpapers
-      # - f_gitconfig
-      # - f_gnupg
-      # - f_ssh
-      # - f_zplugrc
-      # - f_zshrc
+      - d_wallpapers
+
       # ~/.config
       - d_aerospace
-      - d_bat
-      - d_borders
-      - d_bottom
-      - d_delta
-      - d_fsh
-      - d_helix
-      - d_iterm2
-      - d_k9s
-      - d_karabiner
-      # - d_lazygit
-      # - d_neofetch
-      # - d_sketchybar
-      # - d_stylus
-      # - d_yazi
-      # - d_zed
-      # - d_zen_browser
-      # - d_zellij
-      # - f_starship
-      # ~/Library/Application Support
-      - d_macos_k9s
-      # - d_macos_espanso
-      # - d_macos_pypoetry
-      # - f_macos_vscode

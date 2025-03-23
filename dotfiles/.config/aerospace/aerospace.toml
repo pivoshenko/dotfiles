@@ -27,7 +27,7 @@ inner.vertical = 10
 outer.left = 10
 outer.bottom = 10
 outer.top = 55
-# for the M1 MacBook
+# for the M1 MacBook with the notch
 # outer.top = [{ monitor.main = 10 }, { monitor.secondary = 55 }, 10]
 outer.right = 10
 
@@ -140,6 +140,20 @@ minus = "resize smart -50"
 equal = "resize smart +50"
 enter = "mode main"
 esc = "mode main"
+
+# =================================================
+# Workspaces 
+# =================================================
+
+#1 Comms (Telegram, Discord, etc.)
+#2 Media
+#3 Notes (Obsidian)
+#4 Browsing (Zen)
+#5 Terminal (iTerm2)
+#6 Coding (Zed, VSCode)
+#7 Databases (MongoDB Compass, DBeaver)
+#8 Misc (Insomnia, Postman)
+#9 Misc
 
 # =================================================
 # Workspaces - #1
