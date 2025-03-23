@@ -22,7 +22,7 @@
 What's in here?
 
 - My `brew` dependencies, including apps, fonts, LSPs, extensions, etc., see [`Brewfile`](Brewfile)
-- My macOS default configurations, see [`macos`](macos/default.sh)
+- My macOS default configurations, see [`macos`](macos/defaults.sh)
 - My wallpapers set, see [`wallpapers`](wallpapers)
 
 ## Main principles
